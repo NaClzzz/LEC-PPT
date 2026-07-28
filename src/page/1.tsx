@@ -34,11 +34,23 @@ export default function Section1() {
     const start = startRef.current
     if (!section || !bg1 || !bg2 || !circle || !title || !smallLeft || !smallRight || !start) return
 
+    const current = { dx: 0, dy: 0 }
+    const target = { dx: 0, dy: 0 }
+
     const handleMouse = (e: MouseEvent) => {
       const cx = window.innerWidth / 2
       const cy = window.innerHeight / 2
-      const dx = (e.clientX - cx) / cx
-      const dy = (e.clientY - cy) / cy
+      target.dx = (e.clientX - cx) / cx
+      target.dy = (e.clientY - cy) / cy
+    }
+
+    section.addEventListener('mousemove', handleMouse)
+
+    let raf: number
+    const tick = () => {
+      current.dx += (target.dx - current.dx) * 0.08
+      current.dy += (target.dy - current.dy) * 0.08
+      const { dx, dy } = current
 
       bg1.style.transform = `translateY(-50%) translateX(${dx * 12}px) translateY(${dy * 6}px)`
       bg2.style.transform = `translateY(-50%) translateX(${dx * 12}px) translateY(${dy * 6}px)`
@@ -47,10 +59,11 @@ export default function Section1() {
       smallLeft.style.transform = `translate(${dx * -8}px, ${dy * -8}px)`
       smallRight.style.transform = `translate(${dx * -8}px, ${dy * -8}px)`
       start.style.transform = `translate(${dx * -8}px, ${dy * -8}px)`
-    }
 
-    section.addEventListener('mousemove', handleMouse)
-    return () => section.removeEventListener('mousemove', handleMouse)
+      raf = requestAnimationFrame(tick)
+    }
+    raf = requestAnimationFrame(tick)
+    return () => { cancelAnimationFrame(raf); section.removeEventListener('mousemove', handleMouse) }
   }, [])
 
   return (

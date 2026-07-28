@@ -96,18 +96,29 @@ export default function QuoteSection({ bg, text, attr, ambient }: Props) {
     const contentEl = contentRef.current
     if (!section || !ambientEl || !contentEl) return
 
+    const current = { dx: 0, dy: 0 }
+    const target = { dx: 0, dy: 0 }
+
     const handleMouse = (e: MouseEvent) => {
       const cx = window.innerWidth / 2
       const cy = window.innerHeight / 2
-      const dx = (e.clientX - cx) / cx
-      const dy = (e.clientY - cy) / cy
-
-      ambientEl.style.transform = `translate(${dx * 12}px, ${dy * 6}px)`
-      contentEl.style.transform = `translate(${dx * -4}px, ${dy * -4}px)`
+      target.dx = (e.clientX - cx) / cx
+      target.dy = (e.clientY - cy) / cy
     }
 
     section.addEventListener('mousemove', handleMouse)
-    return () => section.removeEventListener('mousemove', handleMouse)
+
+    let raf: number
+    const tick = () => {
+      current.dx += (target.dx - current.dx) * 0.08
+      current.dy += (target.dy - current.dy) * 0.08
+      const { dx, dy } = current
+      ambientEl.style.transform = `translate(${dx * 12}px, ${dy * 6}px)`
+      contentEl.style.transform = `translate(${dx * -4}px, ${dy * -4}px)`
+      raf = requestAnimationFrame(tick)
+    }
+    raf = requestAnimationFrame(tick)
+    return () => { cancelAnimationFrame(raf); section.removeEventListener('mousemove', handleMouse) }
   }, [])
 
   return (
