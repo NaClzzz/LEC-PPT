@@ -68,6 +68,8 @@ function doScramble(el: HTMLElement, final: string) {
 export default function QuoteSection({ bg, text, attr, ambient }: Props) {
   const ref = useRef<HTMLElement>(null)
   const done = useRef(false)
+  const ambientRef = useRef<HTMLDivElement>(null)
+  const contentRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     const el = ref.current
@@ -88,16 +90,38 @@ export default function QuoteSection({ bg, text, attr, ambient }: Props) {
     return () => io.disconnect()
   }, [text])
 
+  useEffect(() => {
+    const section = ref.current
+    const ambientEl = ambientRef.current
+    const contentEl = contentRef.current
+    if (!section || !ambientEl || !contentEl) return
+
+    const handleMouse = (e: MouseEvent) => {
+      const cx = window.innerWidth / 2
+      const cy = window.innerHeight / 2
+      const dx = (e.clientX - cx) / cx
+      const dy = (e.clientY - cy) / cy
+
+      ambientEl.style.transform = `translate(${dx * 12}px, ${dy * 6}px)`
+      contentEl.style.transform = `translate(${dx * -4}px, ${dy * -4}px)`
+    }
+
+    section.addEventListener('mousemove', handleMouse)
+    return () => section.removeEventListener('mousemove', handleMouse)
+  }, [])
+
   return (
     <section
       ref={ref}
       className={`relative flex min-h-[80vh] items-center justify-center overflow-hidden px-[8vw] text-center ${bgMap[bg]}`}
     >
-      <div className={`pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 select-none font-bebas text-[clamp(8rem,22vw,20rem)] leading-none tracking-[-0.06em] ${ambientMap[bg]}`}>
-        {ambient}
+      <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+        <div ref={ambientRef} className={`select-none font-bebas text-[clamp(8rem,22vw,20rem)] leading-none tracking-[-0.06em] ${ambientMap[bg]}`}>
+          {ambient}
+        </div>
       </div>
 
-      <div className="relative z-10 max-w-[1200px]">
+      <div ref={contentRef} className="relative z-10 max-w-[1200px]">
         <p className="scramble-text font-serif text-[clamp(1.6rem,4.5vw,3.5rem)] font-semibold leading-[1.6] tracking-[-0.02em]">
           {text}
         </p>
