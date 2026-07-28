@@ -129,8 +129,8 @@ SOF
               className="line-inner block"
               style={{ transform: 'translateY(110%)', letterSpacing: '-0.03em', transition: 'transform .9s cubic-bezier(0.76,0,0.24,1), letter-spacing .6s ease, filter 1.1s cubic-bezier(0.76,0,0.24,1)' }}
             >
-              <span className="text-4xl font-bold text-gray-800 sm:text-5xl md:text-8xl lg:text-[7rem]">
-                2026招新
+<span className="text-4xl font-bold text-gray-900 sm:text-5xl md:text-8xl lg:text-[7rem]">
+                 2026招新
               </span>
             </span>
           </div>

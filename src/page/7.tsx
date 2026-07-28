@@ -30,7 +30,7 @@ export default function Section7() {
         <h2 className="ch-title mb-8 cursor-default">
           <div className="line-wrap overflow-hidden leading-[1.15]">
             <span className="line-inner block" style={{ transform: 'translateY(110%)', letterSpacing: '-0.03em', transition: 'transform .9s cubic-bezier(0.76,0,0.24,1), letter-spacing .6s ease, filter 1.1s cubic-bezier(0.76,0,0.24,1)' }}>
-               <span className="text-3xl font-bold text-gray-800 sm:text-5xl md:text-7xl lg:text-8xl">弹性制度</span>
+               <span className="text-3xl font-bold text-gray-800 sm:text-5xl md:text-7xl lg:text-8xl">规范制度</span>
             </span>
           </div>
           <div className="line-wrap overflow-hidden leading-[1.15]">
@@ -45,7 +45,7 @@ export default function Section7() {
             <div>
               <div className="mb-3 border-b border-gray-300/40 pb-2 text-sm tracking-[0.15em] text-gray-400 uppercase">考勤</div>
               <p className="body-p font-misans-light text-[1.05rem] leading-[1.75] text-gray-500" style={{ opacity: 0, transform: 'translateY(24px)', transition: 'opacity .8s cubic-bezier(0.76,0,0.24,1) .3s, transform .8s cubic-bezier(0.76,0,0.24,1) .3s' }}>
-                每周 <strong className="relative font-semibold text-gray-800">28 小时</strong>，弹性安排，合理平衡学习与项目时间。
+                每周 <strong className="relative font-semibold text-gray-800">28 小时</strong> 打卡，弹性安排，合理平衡学习与项目时间。
               </p>
             </div>
             <div>
