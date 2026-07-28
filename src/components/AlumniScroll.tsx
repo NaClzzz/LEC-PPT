@@ -31,19 +31,12 @@ export default function AlumniScroll() {
   useEffect(() => {
     const sc = scrollRef.current
     if (!sc) return
-    let paused = false
     let raf: number
-
-    const onEnter = () => { paused = true }
-    const onLeave = () => { paused = false }
-    sc.addEventListener('mouseenter', onEnter)
-    sc.addEventListener('mouseleave', onLeave)
-
     let skip = 0
 
     function step() {
       const s = scrollRef.current
-      if (!paused && s) {
+      if (s) {
         skip = (skip + 1) % 3
         if (skip === 0) s.scrollLeft += 1
         if (s.scrollLeft >= s.scrollWidth / 2) {
@@ -53,7 +46,7 @@ export default function AlumniScroll() {
       raf = requestAnimationFrame(step)
     }
     raf = requestAnimationFrame(step)
-    return () => { cancelAnimationFrame(raf); sc.removeEventListener('mouseenter', onEnter); sc.removeEventListener('mouseleave', onLeave) }
+    return () => cancelAnimationFrame(raf)
   }, [])
 
   return (

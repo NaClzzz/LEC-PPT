@@ -92,7 +92,7 @@ export default function Section6() {
             {techs.map((t, i) => (
               <div
                 key={t.name}
-                className="tech-item cursor-pointer rounded-sm border border-gray-200/60 bg-white/50 px-6 py-5 transition-all duration-300 hover:bg-white hover:shadow-md"
+                className="tech-item cursor-pointer rounded-sm border border-gray-200/60 bg-white/50 px-6 py-5 transition-all duration-300 hover:bg-white hover:shadow-md" data-hover-scale
                 style={{ opacity: 0, transform: 'translateY(20px)', transition: `opacity .35s cubic-bezier(0.76,0,0.24,1) ${.12 + i * .04}s, transform .35s cubic-bezier(0.76,0,0.24,1) ${.12 + i * .04}s, box-shadow .3s ease, background-color .3s ease` }}
                 onClick={() => { setSelected(t); setClosing(false) }}
               >
@@ -113,7 +113,7 @@ export default function Section6() {
           >
             <button
               className="absolute top-4 right-4 w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center z-10 transition-colors"
-              onClick={handleClose}
+data-hover-scale onClick={handleClose}
             >
               <span className="text-gray-800 text-lg leading-none">✕</span>
             </button>

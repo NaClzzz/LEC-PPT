@@ -53,7 +53,7 @@ export default function Section8() {
               <strong className="font-semibold text-gray-800">招新时间：</strong>2026 年 8 月 — 10 月
             </p>
             <p className="body-p font-misans-light text-[1rem] leading-[1.75] text-gray-500" style={{ opacity: 0, transform: 'translateY(24px)', transition: 'opacity .8s cubic-bezier(0.76,0,0.24,1) .61s, transform .8s cubic-bezier(0.76,0,0.24,1) .61s' }}>
-              <strong className="font-semibold text-gray-800">招新对象：</strong>全体大一新生，不限专业
+              <strong className="font-semibold text-gray-800">招新对象：</strong>全体大一新生
             </p>
             <p className="body-p font-misans-light text-[1rem] leading-[1.75] text-gray-500" style={{ opacity: 0, transform: 'translateY(24px)', transition: 'opacity .8s cubic-bezier(0.76,0,0.24,1) .67s, transform .8s cubic-bezier(0.76,0,0.24,1) .67s' }}>
               <strong className="font-semibold text-gray-800">团队地址：</strong>明理楼 C 栋 10 楼 C1010

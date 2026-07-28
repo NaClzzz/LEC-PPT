@@ -1,3 +1,4 @@
+import { useEffect, useRef } from 'react'
 import LenisScroll from './components/LenisScroll'
 import LoadingScreen from './components/LoadingScreen'
 import AlumniScroll from './components/AlumniScroll'
@@ -12,9 +13,55 @@ import Section6 from './page/6'
 import Section7 from './page/7'
 import Section8 from './page/8'
 
+function CursorDot() {
+  const dotRef = useRef<HTMLDivElement>(null)
+  const pos = useRef({ x: 0, y: 0 })
+  const target = useRef({ x: 0, y: 0 })
+  const scaleRef = useRef(1)
+  const currentScale = useRef(1)
+
+  useEffect(() => {
+    const update = (e: MouseEvent) => {
+      target.current.x = e.clientX
+      target.current.y = e.clientY
+      if ((e.target as HTMLElement).closest('[data-hover-scale]')) {
+        scaleRef.current = 1.5
+      } else {
+        scaleRef.current = 1
+      }
+    }
+    window.addEventListener('mousemove', update)
+    return () => window.removeEventListener('mousemove', update)
+  }, [])
+
+  useEffect(() => {
+    const dot = dotRef.current
+    if (!dot) return
+    let raf: number
+    const tick = () => {
+      pos.current.x += (target.current.x - pos.current.x) * 0.12
+      pos.current.y += (target.current.y - pos.current.y) * 0.12
+      currentScale.current += (scaleRef.current - currentScale.current) * 0.12
+      dot.style.transform = `translate(${pos.current.x - 6}px, ${pos.current.y - 6}px) scale(${currentScale.current})`
+      raf = requestAnimationFrame(tick)
+    }
+    raf = requestAnimationFrame(tick)
+    return () => cancelAnimationFrame(raf)
+  }, [])
+
+  return (
+    <div
+      ref={dotRef}
+      className="pointer-events-none fixed left-0 top-0 z-[9999] h-3 w-3 rounded-full"
+      style={{ backgroundColor: '#42A5F5' }}
+    />
+  )
+}
+
 function App() {
   return (
     <div className="relative">
+      <CursorDot />
       <LenisScroll>
         <div>
           <Section1 />
