@@ -39,7 +39,7 @@ export default function Section2() {
         ONE
       </div>
 
-      <div className="relative z-10 ml-28 w-full max-w-7xl text-left">
+      <div className="relative z-10 ml-0 w-full max-w-7xl text-left md:ml-28">
         <div className="flex gap-16">
           <div className="flex-1">
             <div className="mb-6 flex items-center gap-5 text-sm tracking-[0.3em] text-gray-400 before:block before:h-[1.5px] before:w-[30px] before:flex-shrink-0 before:bg-accent uppercase">
@@ -52,7 +52,7 @@ export default function Section2() {
                   className="line-inner block"
                   style={{ transform: 'translateY(110%)', letterSpacing: '-0.03em', transition: 'transform .9s cubic-bezier(0.76,0,0.24,1), letter-spacing .6s ease, filter 1.1s cubic-bezier(0.76,0,0.24,1)' }}
                 >
-                  <span className="text-5xl font-bold text-gray-800 sm:text-6xl md:text-7xl lg:text-8xl">
+                  <span className="text-3xl font-bold text-gray-800 sm:text-5xl md:text-7xl lg:text-8xl">
                     乐程软件工作室
                   </span>
                 </span>
@@ -62,14 +62,14 @@ export default function Section2() {
                   className="line-inner block"
                   style={{ transform: 'translateY(110%)', letterSpacing: '-0.03em', transition: 'transform .9s cubic-bezier(0.76,0,0.24,1) .08s, letter-spacing .6s ease .08s, filter 1.1s cubic-bezier(0.76,0,0.24,1) .08s' }}
                 >
-                  <span className="text-5xl font-bold text-gray-800 sm:text-6xl md:text-7xl lg:text-8xl">
+                  <span className="text-3xl font-bold text-gray-800 sm:text-5xl md:text-7xl lg:text-8xl">
                     不止于代码
                   </span>
                 </span>
               </div>
             </h2>
 
-            <div className="grid max-w-[1100px] gap-12 md:grid-cols-2">
+            <div className="grid max-w-[1100px] gap-6 md:gap-12 md:grid-cols-2">
               <div>
                 <div className="mb-5 border-b border-gray-300/40 pb-3 text-sm tracking-[0.15em] text-gray-400 uppercase">
                   团队概况
@@ -95,7 +95,7 @@ export default function Section2() {
             </div>
           </div>
 
-          <div className="album-wrap flex items-center -mr-40" style={{ opacity: 0, transform: 'translateY(24px)', transition: 'opacity .8s cubic-bezier(0.76,0,0.24,1) .7s, transform .8s cubic-bezier(0.76,0,0.24,1) .7s' }}>
+          <div className="album-wrap hidden items-center -mr-40 md:flex" style={{ opacity: 0, transform: 'translateY(24px)', transition: 'opacity .8s cubic-bezier(0.76,0,0.24,1) .7s, transform .8s cubic-bezier(0.76,0,0.24,1) .7s' }}>
             <PhotoAlbum images={albumImages} labels={albumLabels} />
           </div>
         </div>

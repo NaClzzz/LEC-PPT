@@ -8,7 +8,9 @@
   --color-accent: #42A5F5;
 }
 
-* { cursor: none !important; }
+@media (min-width: 768px) {
+  * { cursor: none !important; }
+}
 
 html {
   scroll-behavior: smooth;

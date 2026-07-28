@@ -1,4 +1,36 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, type ReactNode } from 'react'
+import GridMotion from '../components/GridMotion'
+
+const gridItems: (string | ReactNode)[] = [
+  'https://trudbot-md-img.oss-cn-shanghai.aliyuncs.com/202407172336220.jpg',
+  <div key="1" className="text-sm sm:text-2xl">全国大学生软件大赛</div>,
+  'https://trudbot-md-img.oss-cn-shanghai.aliyuncs.com/202407172336219.jpg',
+  '省级奖项 100+',
+  'https://trudbot-md-img.oss-cn-shanghai.aliyuncs.com/202407172336218.jpg',
+  'https://trudbot-md-img.oss-cn-shanghai.aliyuncs.com/202407172336217.png',
+  <div key="2" className="text-sm sm:text-2xl">挑战杯 金奖</div>,
+  'https://trudbot-md-img.oss-cn-shanghai.aliyuncs.com/202407172336216.jpg',
+  'CCCC 团体程序设计天梯赛',
+  'https://ziro.oss-cn-shanghai.aliyuncs.com/achievements/%E9%99%88%E6%98%B1%E7%92%8B%E7%9D%BF%E6%8A%97%E5%9B%BD%E8%B5%9B.webp',
+  <div key="3" className="text-sm sm:text-2xl"> CCF CAT 全国算法精英大赛</div>,
+  'https://trudbot-md-img.oss-cn-shanghai.aliyuncs.com/202407172336213.jpg',
+  'https://ziro.oss-cn-shanghai.aliyuncs.com/achievements/CCCC2025GPLT09064_%E5%85%A8%E5%9B%BD%E6%80%BB%E5%86%B3%E8%B5%9B_%E5%9B%A2%E9%98%9F%E4%BA%8C%E7%AD%89%E5%A5%96_%E8%A5%BF%E5%8D%97%E7%9F%B3%E6%B2%B9%E5%A4%A7%E5%AD%A6_swpu1_%E9%BE%9A%E4%BA%91%E9%A3%9E_00.webp',
+  '省级奖项 100+',
+  'https://trudbot-md-img.oss-cn-shanghai.aliyuncs.com/202407172336212.jpg',
+  <div key="4" className="text-sm sm:text-2xl">ACM-ICPC 区域赛</div>,
+  'https://trudbot-md-img.oss-cn-shanghai.aliyuncs.com/202407172336211.jpg',
+  'https://trudbot-md-img.oss-cn-shanghai.aliyuncs.com/202407172336215.jpg',
+  '国家级奖项 50+',
+  'https://trudbot-md-img.oss-cn-shanghai.aliyuncs.com/202407172336208.jpg',
+  <div key="5" className="text-sm sm:text-2xl">期待你的加入</div>,
+  'https://trudbot-md-img.oss-cn-shanghai.aliyuncs.com/202407172336207.jpg',
+  'https://trudbot-md-img.oss-cn-shanghai.aliyuncs.com/202407172336206.jpg',
+  '毕业生去向：大厂 80%',
+  'https://trudbot-md-img.oss-cn-shanghai.aliyuncs.com/202407172336205.jpg',
+  'https://trudbot-md-img.oss-cn-shanghai.aliyuncs.com/202407172336204.jpg',
+  'https://trudbot-md-img.oss-cn-shanghai.aliyuncs.com/202407172336203.jpg',
+  'https://trudbot-md-img.oss-cn-shanghai.aliyuncs.com/202407172336201.jpg',
+]
 
 export default function Section4() {
   const ref = useRef<HTMLElement>(null)
@@ -18,11 +50,15 @@ export default function Section4() {
 
   return (
     <section id="section-4" ref={ref} className="relative flex min-h-screen items-center overflow-hidden bg-gray-100 px-6">
+<div className="pointer-events-none absolute inset-0 z-0 opacity-20">
+        <GridMotion items={gridItems} gradientColor="#ffffff" />
+      </div>
+
       <div className="ch-bg-num pointer-events-none absolute right-[-2vw] top-1/2 select-none font-bebas text-[clamp(16rem,40vw,38rem)] leading-none tracking-[-0.06em] text-gray-300/40">
         THREE
       </div>
 
-      <div className="relative z-10 ml-28 w-full max-w-4xl text-left">
+      <div className="relative z-10 ml-0 w-full max-w-4xl text-left md:ml-28">
         <div className="mb-6 flex items-center gap-5 text-sm tracking-[0.3em] text-gray-400 before:block before:h-[1.5px] before:w-[30px] before:flex-shrink-0 before:bg-accent uppercase">
           THREE · 团队成就
         </div>
@@ -30,17 +66,17 @@ export default function Section4() {
         <h2 className="ch-title mb-8 cursor-default">
           <div className="line-wrap overflow-hidden leading-[1.15]">
             <span className="line-inner block" style={{ transform: 'translateY(110%)', letterSpacing: '-0.03em', transition: 'transform .9s cubic-bezier(0.76,0,0.24,1), letter-spacing .6s ease, filter 1.1s cubic-bezier(0.76,0,0.24,1)' }}>
-               <span className="text-5xl font-bold text-gray-800 sm:text-6xl md:text-7xl lg:text-8xl">硕果累累</span>
+               <span className="text-3xl font-bold text-gray-800 sm:text-5xl md:text-7xl lg:text-8xl">硕果累累</span>
             </span>
           </div>
           <div className="line-wrap overflow-hidden leading-[1.15]">
             <span className="line-inner block" style={{ transform: 'translateY(110%)', letterSpacing: '-0.03em', transition: 'transform .9s cubic-bezier(0.76,0,0.24,1) .08s, letter-spacing .6s ease .08s, filter 1.1s cubic-bezier(0.76,0,0.24,1) .08s' }}>
-               <span className="text-5xl font-bold text-gray-800 sm:text-6xl md:text-7xl lg:text-8xl">用作品说话</span>
+               <span className="text-3xl font-bold text-gray-800 sm:text-5xl md:text-7xl lg:text-8xl">用作品说话</span>
             </span>
           </div>
         </h2>
 
-        <div className="grid max-w-[1100px] gap-10 md:grid-cols-3">
+        <div className="grid max-w-[1100px] gap-8 md:gap-10 md:grid-cols-3">
           <div>
             <div className="mb-3 font-bebas text-5xl leading-none text-accent">100+</div>
             <div className="mb-3 border-b border-gray-300/40 pb-2 text-sm tracking-[0.15em] text-gray-400 uppercase">学科竞赛</div>

@@ -22,7 +22,7 @@ export default function Section5() {
         FOUR
       </div>
 
-      <div className="relative z-10 ml-28 w-full max-w-4xl text-left">
+      <div className="relative z-10 ml-0 w-full max-w-4xl text-left md:ml-28">
         <div className="mb-6 flex items-center gap-5 text-sm tracking-[0.3em] text-gray-400 before:block before:h-[1.5px] before:w-[30px] before:flex-shrink-0 before:bg-accent uppercase">
           FOUR · 成员去向
         </div>
@@ -30,12 +30,12 @@ export default function Section5() {
         <h2 className="ch-title mb-8 cursor-default">
           <div className="line-wrap overflow-hidden leading-[1.15]">
             <span className="line-inner block" style={{ transform: 'translateY(110%)', letterSpacing: '-0.03em', transition: 'transform .9s cubic-bezier(0.76,0,0.24,1), letter-spacing .6s ease, filter 1.1s cubic-bezier(0.76,0,0.24,1)' }}>
-               <span className="text-5xl font-bold text-gray-800 sm:text-6xl md:text-7xl lg:text-8xl">卓越去向</span>
+               <span className="text-3xl font-bold text-gray-800 sm:text-5xl md:text-7xl lg:text-8xl">卓越去向</span>
             </span>
           </div>
           <div className="line-wrap overflow-hidden leading-[1.15]">
             <span className="line-inner block" style={{ transform: 'translateY(110%)', letterSpacing: '-0.03em', transition: 'transform .9s cubic-bezier(0.76,0,0.24,1) .08s, letter-spacing .6s ease .08s, filter 1.1s cubic-bezier(0.76,0,0.24,1) .08s' }}>
-               <span className="text-5xl font-bold text-gray-800 sm:text-6xl md:text-7xl lg:text-8xl">大厂名校</span>
+               <span className="text-3xl font-bold text-gray-800 sm:text-5xl md:text-7xl lg:text-8xl">大厂名校</span>
             </span>
           </div>
         </h2>
@@ -44,7 +44,7 @@ export default function Section5() {
           通过乐程的学习与培养，历届成员在深造与就业方面均取得了优异成绩。
         </p>
 
-        <div className="grid max-w-[1100px] gap-10 md:grid-cols-2">
+        <div className="grid max-w-[1100px] gap-6 md:gap-10 md:grid-cols-2">
           <div>
             <div className="mb-4 border-b border-gray-300/40 pb-2 text-sm tracking-[0.15em] text-gray-400 uppercase">保研深造</div>
             <ul className="space-y-2">

@@ -52,9 +52,9 @@ export default function AlumniScroll() {
   return (
     <section
       ref={ref}
-      className="relative overflow-hidden bg-gray-50 pt-12 pb-24"
+      className="relative overflow-hidden bg-gray-50 pt-6 pb-24"
     >
-      <div className="mx-auto mb-6 max-w-7xl px-6">
+      <div className="mx-auto mb-3 max-w-7xl px-6">
         <div className="flex items-center gap-5 text-sm tracking-[0.3em] text-gray-400 before:block before:h-[1.5px] before:w-[30px] before:flex-shrink-0 before:bg-accent uppercase">
           历届成员去向一览
         </div>

@@ -69,7 +69,7 @@ export default function Section6() {
         FIVE
       </div>
 
-      <div className="relative z-10 ml-28 w-full max-w-4xl text-left">
+      <div className="relative z-10 ml-0 md:ml-28 w-full max-w-4xl text-left">
         <div className="mb-6 flex items-center gap-5 text-sm tracking-[0.3em] text-gray-400 before:block before:h-[1.5px] before:w-[30px] before:flex-shrink-0 before:bg-accent uppercase">
           FIVE · 技术方向
         </div>
@@ -77,22 +77,23 @@ export default function Section6() {
         <h2 className="ch-title mb-8 cursor-default">
           <div className="line-wrap overflow-hidden leading-[1.15]">
             <span className="line-inner block" style={{ transform: 'translateY(110%)', letterSpacing: '-0.03em', transition: 'transform .9s cubic-bezier(0.76,0,0.24,1), letter-spacing .6s ease, filter 1.1s cubic-bezier(0.76,0,0.24,1)' }}>
-               <span className="text-5xl font-bold text-gray-800 sm:text-6xl md:text-7xl lg:text-8xl">多元技术</span>
+               <span className="text-3xl font-bold text-gray-800 sm:text-5xl md:text-7xl lg:text-8xl">多元技术</span>
             </span>
           </div>
           <div className="line-wrap overflow-hidden leading-[1.15]">
             <span className="line-inner block" style={{ transform: 'translateY(110%)', letterSpacing: '-0.03em', transition: 'transform .9s cubic-bezier(0.76,0,0.24,1) .08s, letter-spacing .6s ease .08s, filter 1.1s cubic-bezier(0.76,0,0.24,1) .08s' }}>
-               <span className="text-5xl font-bold text-gray-800 sm:text-6xl md:text-7xl lg:text-8xl">总有一款适合你</span>
+               <span className="text-3xl font-bold text-gray-800 sm:text-5xl md:text-7xl lg:text-8xl">总有一款适合你</span>
             </span>
           </div>
         </h2>
 
         {techs.length > 0 && (
-          <div className="grid max-w-[1000px] gap-4 md:grid-cols-2">
+          <div className="grid max-w-[1000px] gap-3 md:gap-4 md:grid-cols-2">
+            {/* 点击卡片了解更详细的方向内容 */}
             {techs.map((t, i) => (
               <div
                 key={t.name}
-                className="tech-item cursor-pointer rounded-sm border border-gray-200/60 bg-white/50 px-6 py-5 transition-all duration-300 hover:bg-white hover:shadow-md" data-hover-scale
+                className="tech-item cursor-pointer rounded-sm border border-gray-200/60 bg-white/50 px-4 py-4 md:px-6 md:py-5 transition-all duration-300 hover:bg-white hover:shadow-md" data-hover-scale
                 style={{ opacity: 0, transform: 'translateY(20px)', transition: `opacity .35s cubic-bezier(0.76,0,0.24,1) ${.12 + i * .04}s, transform .35s cubic-bezier(0.76,0,0.24,1) ${.12 + i * .04}s, box-shadow .3s ease, background-color .3s ease` }}
                 onClick={() => { setSelected(t); setClosing(false) }}
               >
@@ -103,6 +104,10 @@ export default function Section6() {
             ))}
           </div>
         )}
+
+        <blockquote className="body-p mt-8 max-w-[1000px] border-l-2 border-accent pl-5 font-misans-light text-[1rem] leading-[1.75] text-gray-400 italic" style={{ opacity: 0, transform: 'translateY(24px)', transition: 'opacity .8s cubic-bezier(0.76,0,0.24,1) .7s, transform .8s cubic-bezier(0.76,0,0.24,1) .7s' }}>
+点击卡片了解详情
+        </blockquote>
       </div>
 
       {selected && (

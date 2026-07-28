@@ -52,7 +52,7 @@ function CursorDot() {
   return (
     <div
       ref={dotRef}
-      className="pointer-events-none fixed left-0 top-0 z-[9999] h-3 w-3 rounded-full"
+      className="pointer-events-none fixed left-0 top-0 z-[9999] hidden h-3 w-3 rounded-full md:block"
       style={{ backgroundColor: '#42A5F5' }}
     />
   )
