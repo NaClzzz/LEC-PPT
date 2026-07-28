@@ -40,18 +40,20 @@ export default function Section7() {
           </div>
         </h2>
 
-        <div className="grid max-w-[1100px] gap-10 md:grid-cols-3">
-          <div>
-            <div className="mb-3 border-b border-gray-300/40 pb-2 text-sm tracking-[0.15em] text-gray-400 uppercase">考勤</div>
-            <p className="body-p font-misans-light text-[1.05rem] leading-[1.75] text-gray-500" style={{ opacity: 0, transform: 'translateY(24px)', transition: 'opacity .8s cubic-bezier(0.76,0,0.24,1) .3s, transform .8s cubic-bezier(0.76,0,0.24,1) .3s' }}>
-              每周 <strong className="relative font-semibold text-gray-800">28 小时</strong>，弹性安排，合理平衡学习与项目时间。
-            </p>
-          </div>
-          <div>
-            <div className="mb-3 border-b border-gray-300/40 pb-2 text-sm tracking-[0.15em] text-gray-400 uppercase">例会</div>
-            <p className="body-p font-misans-light text-[1.05rem] leading-[1.75] text-gray-500" style={{ opacity: 0, transform: 'translateY(24px)', transition: 'opacity .8s cubic-bezier(0.76,0,0.24,1) .45s, transform .8s cubic-bezier(0.76,0,0.24,1) .45s' }}>
-              定期开展团队例会，同步项目进度，交流技术难点，规划阶段目标。
-            </p>
+        <div className="grid max-w-[1100px] gap-10 md:grid-cols-2">
+          <div className="space-y-10">
+            <div>
+              <div className="mb-3 border-b border-gray-300/40 pb-2 text-sm tracking-[0.15em] text-gray-400 uppercase">考勤</div>
+              <p className="body-p font-misans-light text-[1.05rem] leading-[1.75] text-gray-500" style={{ opacity: 0, transform: 'translateY(24px)', transition: 'opacity .8s cubic-bezier(0.76,0,0.24,1) .3s, transform .8s cubic-bezier(0.76,0,0.24,1) .3s' }}>
+                每周 <strong className="relative font-semibold text-gray-800">28 小时</strong>，弹性安排，合理平衡学习与项目时间。
+              </p>
+            </div>
+            <div>
+              <div className="mb-3 border-b border-gray-300/40 pb-2 text-sm tracking-[0.15em] text-gray-400 uppercase">例会</div>
+              <p className="body-p font-misans-light text-[1.05rem] leading-[1.75] text-gray-500" style={{ opacity: 0, transform: 'translateY(24px)', transition: 'opacity .8s cubic-bezier(0.76,0,0.24,1) .45s, transform .8s cubic-bezier(0.76,0,0.24,1) .45s' }}>
+                定期开展团队例会，同步项目进度，交流技术难点，规划阶段目标。
+              </p>
+            </div>
           </div>
           <div>
             <div className="mb-3 border-b border-gray-300/40 pb-2 text-sm tracking-[0.15em] text-gray-400 uppercase">学习交流</div>
