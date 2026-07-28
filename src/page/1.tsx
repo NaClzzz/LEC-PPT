@@ -78,7 +78,7 @@ SOF
               style={{ transform: 'translateY(110%)', letterSpacing: '-0.03em', transition: 'transform .9s cubic-bezier(0.76,0,0.24,1), letter-spacing .6s ease, filter 1.1s cubic-bezier(0.76,0,0.24,1)' }}
             >
               <span className="text-5xl font-bold text-gray-800 sm:text-6xl md:text-8xl lg:text-[7rem]">
-                2026 招新
+                2026招新
               </span>
             </span>
           </div>
