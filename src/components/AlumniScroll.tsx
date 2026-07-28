@@ -5,7 +5,7 @@ const alumni = [
   { grade: '2022届', name: '隋炀', dest: '天津大学', type: '保研' },
   { grade: '2022届', name: '杨东明', dest: '作业帮', type: '就业' },
   { grade: '2021届', name: '赵泽熙', dest: '北京航空航天大学', type: '保研' },
-  { grade: '2022届', name: '李焕然', dest: '成都互联网', type: '就业' },
+  { grade: '2022届', name: '陈双彬', dest: '字节跳动', type: '就业' },
   { grade: '2021届', name: '张歆予', dest: '电子科技大学', type: '保研' },
   { grade: '2021届', name: '李亚文', dest: '美团', type: '就业' },
   { grade: '2021届', name: '宋遗平', dest: '百度', type: '就业' },

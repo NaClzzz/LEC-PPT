@@ -48,11 +48,11 @@ export default function Section5() {
           <div>
             <div className="mb-4 border-b border-gray-300/40 pb-2 text-sm tracking-[0.15em] text-gray-400 uppercase">保研深造</div>
             <ul className="space-y-2">
-              {['电子科技大学', '北京航空航天大学'].map((s, i) => (
+              {['电子科技大学', '重庆大学','天津大学','北京航空航天大学'].map((s, i) => (
                 <li key={s} className="body-p font-misans-light text-[1.05rem] leading-[1.75] text-gray-500" style={{ opacity: 0, transform: 'translateY(24px)', transition: `opacity .8s cubic-bezier(0.76,0,0.24,1) ${.4 + i * .1}s, transform .8s cubic-bezier(0.76,0,0.24,1) ${.4 + i * .1}s` }}>
                   <span className="mr-3 font-bebas text-lg text-accent">—</span>
                   <strong className="font-semibold text-gray-800">{s}</strong>
-                  {i === 1 && <span className="text-gray-400"> 等知名高校</span>}
+                  {i === 3 && <span className="text-gray-400"> 等知名高校</span>}
                 </li>
               ))}
             </ul>
