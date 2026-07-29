@@ -52,7 +52,7 @@ export default function AlumniScroll() {
   return (
     <section
       ref={ref}
-      className="relative overflow-hidden bg-gray-50 pt-6 pb-24"
+      className="relative overflow-hidden bg-gray-50 pt-6 pb-8"
     >
       <div className="mx-auto mb-3 max-w-7xl px-6">
         <div className="flex items-center gap-5 text-sm tracking-[0.3em] text-gray-400 before:block before:h-[1.5px] before:w-[30px] before:flex-shrink-0 before:bg-accent uppercase">
@@ -65,7 +65,7 @@ export default function AlumniScroll() {
           <div
             key={i}
             className="relative flex-shrink-0 rounded-2xl bg-white p-8 shadow-sm"
-            style={{ width: 'clamp(220px, 18vw, 300px)', opacity: 0, transform: 'translateY(30px)', transition: `opacity .7s cubic-bezier(0.76,0,0.24,1) ${.15 + i * .06}s, transform .7s cubic-bezier(0.76,0,0.24,1) ${.15 + i * .06}s` }}
+            style={{ width: 'clamp(220px, 18vw, 300px)', opacity: 0, transform: 'translateY(30px)', transition: `opacity .7s cubic-bezier(0.76,0,0.24,1) ${.1 + i * .04}s, transform .7s cubic-bezier(0.76,0,0.24,1) ${.1 + i * .04}s` }}
           >
             <div className="mb-3 font-bebas text-xs tracking-[0.15em] text-accent uppercase">{a.grade}</div>
             <div className="mb-1 text-xl font-bold text-gray-800">{a.name}</div>
@@ -73,6 +73,12 @@ export default function AlumniScroll() {
             <div className="absolute bottom-3 right-3 font-bebas text-[0.7rem] tracking-[0.15em] text-accent uppercase">{a.type}</div>
           </div>
         ))}
+      </div>
+
+      <div className="mt-8 flex justify-end px-6">
+        <button className="cursor-pointer rounded-full border border-accent/30 px-5 py-2 font-misans-light text-xs tracking-[0.12em] text-accent transition-all duration-300 hover:bg-accent hover:text-white mr-24">
+          全部成员 →
+        </button>
       </div>
 
       <style>{`

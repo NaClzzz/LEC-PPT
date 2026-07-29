@@ -29,9 +29,6 @@ export default function Ticker() {
         .ticker-track {
           animation: tickerScroll 18s linear infinite;
         }
-        .ticker-track:hover {
-          animation-play-state: paused;
-        }
         @keyframes tickerScroll {
           0% { transform: translateX(0); }
           100% { transform: translateX(-33.333%); }

@@ -50,7 +50,7 @@ export default function Section4() {
 
   return (
     <section id="section-4" ref={ref} className="relative flex min-h-screen items-center overflow-hidden bg-gray-100 px-6">
-<div className="pointer-events-none absolute inset-0 z-0 opacity-20">
+<div className="pointer-events-none absolute inset-0 z-0 opacity-10">
         <GridMotion items={gridItems} gradientColor="#ffffff" />
       </div>
 
