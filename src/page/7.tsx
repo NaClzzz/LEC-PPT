@@ -35,7 +35,7 @@ export default function Section7() {
           </div>
           <div className="line-wrap overflow-hidden leading-[1.15]">
             <span className="line-inner block" style={{ transform: 'translateY(110%)', letterSpacing: '-0.03em', transition: 'transform .9s cubic-bezier(0.76,0,0.24,1) .08s, letter-spacing .6s ease .08s, filter 1.1s cubic-bezier(0.76,0,0.24,1) .08s' }}>
-               <span className="text-3xl font-bold text-gray-800 sm:text-5xl md:text-7xl lg:text-8xl">成长护航</span>
+               <span className="text-3xl font-bold text-gray-800 sm:text-5xl md:text-7xl lg:text-8xl">为成长护航</span>
             </span>
           </div>
         </h2>
@@ -51,14 +51,14 @@ export default function Section7() {
             <div>
               <div className="mb-3 border-b border-gray-300/40 pb-2 text-sm tracking-[0.15em] text-gray-400 uppercase">例会</div>
               <p className="body-p font-misans-light text-[1.05rem] leading-[1.75] text-gray-500" style={{ opacity: 0, transform: 'translateY(24px)', transition: 'opacity .8s cubic-bezier(0.76,0,0.24,1) .45s, transform .8s cubic-bezier(0.76,0,0.24,1) .45s' }}>
-                定期开展团队例会，同步项目进度，交流技术难点，规划阶段目标。
+                定期开展团队例会，同步学习进度，交流技术难点，规划阶段目标。
               </p>
             </div>
           </div>
           <div>
             <div className="mb-3 border-b border-gray-300/40 pb-2 text-sm tracking-[0.15em] text-gray-400 uppercase">学习交流</div>
             <ul className="space-y-1">
-              {['技术分享会 — 成员轮流主讲，拓宽知识面', '结对编程 — 以老带新，快速上手实际项目', '保研护航 — 导师避坑指南、学长学姐经验分享等资源支持'].map((t, i) => (
+              {[ '结对编程 — 以老带新，快速上手实际项目','技术分享会 — 成员轮流主讲，拓宽知识面', '保研护航 — 学长学姐们的资源与亲身经验分享'].map((t, i) => (
                 <li key={i} className="body-p font-misans-light text-[1.05rem] leading-[1.75] text-gray-500" style={{ opacity: 0, transform: 'translateY(24px)', transition: `opacity .8s cubic-bezier(0.76,0,0.24,1) ${.6 + i * .1}s, transform .8s cubic-bezier(0.76,0,0.24,1) ${.6 + i * .1}s` }}>
                   <span className="mr-2 text-accent">—</span>
                   <strong className="font-semibold text-gray-800">{t.split(' — ')[0]}</strong>
