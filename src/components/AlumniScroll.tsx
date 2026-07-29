@@ -102,7 +102,7 @@ export default function AlumniScroll() {
       </div>
 
       <div className="mt-8 flex justify-end px-6">
-        <button onClick={handleOpen} className="cursor-pointer rounded-full border border-accent/30 px-5 py-2 font-misans-light text-xs tracking-[0.12em] text-accent transition-all duration-300 hover:bg-accent hover:text-white mr-24">
+        <button onClick={handleOpen} data-hover-scale className="cursor-pointer rounded-full border border-accent/30 px-5 py-2 font-misans-light text-xs tracking-[0.12em] text-accent transition-all duration-300 hover:bg-accent hover:text-white mr-24">
           全部成员 →
         </button>
       </div>
@@ -131,6 +131,7 @@ export default function AlumniScroll() {
                   <button
                     key={g}
                     onClick={() => setActiveGrade(g)}
+                    data-hover-scale
                     className={`font-misans-light text-sm tracking-[0.08em] pb-1 transition-colors ${activeGrade === g ? 'text-accent border-b-2 border-accent' : 'text-gray-400 hover:text-gray-600'}`}
                   >
                     {g}级
