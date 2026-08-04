@@ -109,6 +109,7 @@ function App() {
           <div id="progress-section-2"><Section3 /></div>
           <div id="progress-section-3"><Section4 /></div>
           <div id="progress-section-4"><Section5 /></div>
+          <Ticker />
           <div id="progress-section-5"><Section6 /></div>
           <div id="progress-section-6"><Section7 /></div>
           <QuoteSection
