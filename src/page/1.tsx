@@ -78,16 +78,6 @@ export default function Section1() {
 SOF
       </div>
 
-      <nav className="absolute left-0 top-16 z-30 flex w-full flex-wrap items-center justify-center gap-x-4 gap-y-1 md:gap-12">
-        <a href="#section-2" className="font-sans text-[0.65rem] tracking-[0.1em] text-gray-800 transition-colors hover:text-accent no-underline md:text-sm">团队概况</a>
-        <a href="#section-3" className="font-sans text-[0.65rem] tracking-[0.1em] text-gray-800 transition-colors hover:text-accent no-underline md:text-sm">团队历史</a>
-        <a href="#section-4" className="font-sans text-[0.65rem] tracking-[0.1em] text-gray-800 transition-colors hover:text-accent no-underline md:text-sm">团队成就</a>
-        <a href="#section-5" className="font-sans text-[0.65rem] tracking-[0.1em] text-gray-800 transition-colors hover:text-accent no-underline md:text-sm">成员去向</a>
-        <a href="#section-6" className="font-sans text-[0.65rem] tracking-[0.1em] text-gray-800 transition-colors hover:text-accent no-underline md:text-sm">技术方向</a>
-        <a href="#section-7" className="font-sans text-[0.65rem] tracking-[0.1em] text-gray-800 transition-colors hover:text-accent no-underline md:text-sm">团队制度</a>
-        <a href="#section-8" className="font-sans text-[0.65rem] tracking-[0.1em] text-gray-800 transition-colors hover:text-accent no-underline md:text-sm">招新报名</a>
-      </nav>
-
       <div className="absolute left-1/2 top-[48%] -translate-x-1/2 -translate-y-1/2 z-10">
         <div ref={circleRef} className="flex flex-col items-center gap-8 md:flex-row md:gap-[6vw]">
           <span ref={smallLeftRef} className="whitespace-nowrap font-misans-light text-sm tracking-[0.08em] text-gray-800 uppercase">LEC SOFTWARE STUDIO</span>

@@ -15,51 +15,6 @@ import Section8 from './page/8'
 
 const sectionNames = ['首页', '团队概况', '团队历史', '团队成就', '成员去向', '技术方向', '团队制度', '招新报名']
 
-function CursorDot() {
-  const dotRef = useRef<HTMLDivElement>(null)
-  const pos = useRef({ x: 0, y: 0 })
-  const target = useRef({ x: 0, y: 0 })
-  const scaleRef = useRef(1)
-  const currentScale = useRef(1)
-
-  useEffect(() => {
-    const update = (e: MouseEvent) => {
-      target.current.x = e.clientX
-      target.current.y = e.clientY
-      if ((e.target as HTMLElement).closest('[data-hover-scale]')) {
-        scaleRef.current = 1.5
-      } else {
-        scaleRef.current = 1
-      }
-    }
-    window.addEventListener('mousemove', update)
-    return () => window.removeEventListener('mousemove', update)
-  }, [])
-
-  useEffect(() => {
-    const dot = dotRef.current
-    if (!dot) return
-    let raf: number
-    const tick = () => {
-      pos.current.x += (target.current.x - pos.current.x) * 0.12
-      pos.current.y += (target.current.y - pos.current.y) * 0.12
-      currentScale.current += (scaleRef.current - currentScale.current) * 0.12
-      dot.style.transform = `translate(${pos.current.x - 6}px, ${pos.current.y - 6}px) scale(${currentScale.current})`
-      raf = requestAnimationFrame(tick)
-    }
-    raf = requestAnimationFrame(tick)
-    return () => cancelAnimationFrame(raf)
-  }, [])
-
-  return (
-    <div
-      ref={dotRef}
-      className="pointer-events-none fixed left-0 top-0 z-[9999] hidden h-3 w-3 rounded-full md:block"
-      style={{ backgroundColor: '#42A5F5' }}
-    />
-  )
-}
-
 function ScrollProgress() {
   const [active, setActive] = useState(0)
   const sections = useRef<(HTMLElement | null)[]>([])
@@ -107,11 +62,40 @@ function ScrollProgress() {
   )
 }
 
+function FixedNav() {
+  const items = [
+    ['团队概况', '#section-2'],
+    ['团队历史', '#section-3'],
+    ['团队成就', '#section-4'],
+    ['成员去向', '#section-5'],
+    ['技术方向', '#section-6'],
+    ['团队制度', '#section-7'],
+    ['招新报名', '#section-8'],
+  ]
+  return (
+    <nav className="fixed left-1/2 top-4 z-40 flex -translate-x-1/2 flex-col gap-y-1 rounded-full border border-gray-200/60 bg-white/70 px-6 py-3 md:flex-row md:gap-x-10 md:px-8">
+      {[items.slice(0, 4), items.slice(4)].map((row, ri) => (
+        <div key={ri} className="flex items-center justify-center gap-x-4 md:gap-10">
+          {row.map(([label, href]) => (
+            <a
+              key={href}
+              href={href}
+              className="font-sans text-[0.65rem] tracking-[0.1em] text-gray-800 whitespace-nowrap transition-colors hover:text-accent no-underline md:text-sm"
+            >
+              {label}
+            </a>
+          ))}
+        </div>
+      ))}
+    </nav>
+  )
+}
+
 function App() {
   return (
     <div className="relative">
-      <CursorDot />
       <ScrollProgress />
+      <FixedNav />
       <LenisScroll>
         <div>
           <div id="progress-section-0"><Section1 /></div>

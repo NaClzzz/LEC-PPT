@@ -8,16 +8,10 @@ interface TechItem {
 
 const techs: TechItem[] = [
   {
-    name: '前端开发',
-    desc: 'Web 页面 / 跨端应用 / 可视化',
+    name: '全栈开发',
+    desc: 'Web 全栈 / API 设计 / 数据库 / 部署',
     detail:
-      '前端开发负责构建用户能够直接看到和操作的界面，是连接设计与技术的重要桥梁。在这里，你将学习如何使用现代 Web 技术，将静态页面一步步变成交互丰富、体验流畅的应用。<br />从 HTML、CSS、JavaScript 开始，到 Vue、React 等主流框架，再到工程化、组件化开发，我们会通过真实项目帮助你建立完整的前端开发能力，让你真正参与网站和产品的开发。<br /><br /><b>你将学习</b><br />HTML、CSS、JavaScript<br />Vue / React 等现代框架<br />TypeScript<br />前端工程化、Git 协作<br />UI 实现与交互设计<br /><br /><b>适合你</b><br />喜欢设计界面、追求视觉效果，希望快速看到开发成果，享受创造产品的过程。',
-  },
-  {
-    name: '后端开发',
-    desc: '服务端架构 / API 设计 / 数据库',
-    detail:
-      '后端开发负责支撑整个系统的运行，是软件背后的"大脑"。你将学习服务器开发、数据库设计、接口开发以及系统架构等知识，了解一款互联网产品是如何稳定运行的。<br />我们会带你从简单的接口开发开始，逐步学习数据库、缓存、中间件以及部署运维等内容，并参与实际项目，在实践中建立完整的后端开发思维。<br /><br /><b>你将学习</b><br />Java / Go / Node.js<br />MySQL、Redis<br />RESTful API 开发<br />Spring Boot 等开发框架<br />Linux 与服务器部署<br /><br /><b>适合你</b><br />喜欢研究系统运行原理，对程序架构和性能优化感兴趣，希望打造稳定可靠的软件。',
+      '全栈开发覆盖从用户界面到服务端的完整技术链路，是软件背后的"大脑"也是用户面前的"脸面"。在这里，你将学习如何构建用户能直接看到和操作的界面，同时掌握支撑系统稳定运行的后端能力，成为能够独立完成完整产品开发的全能型开发者。<br />我们会带你从 HTML、CSS、JavaScript 开始，到 Vue、React 等现代框架与 TypeScript，再逐步深入服务端开发、数据库、缓存、接口设计以及部署运维，通过真实项目打通前后端，建立完整的工程化开发思维。<br /><br /><b>你将学习</b><br />HTML、CSS、JavaScript、TypeScript<br />Vue / React 等现代框架<br />Java / Go / Node.js<br />MySQL、Redis<br />RESTful API 开发与 Spring Boot 等框架<br />Linux 与服务器部署、Git 协作<br /><br /><b>适合你</b><br />喜欢从界面到系统全程掌控，想亲手做出完整产品，对架构与性能优化同样感兴趣的全面型选手。',
   },
   {
     name: 'Agent 开发',
@@ -33,9 +27,9 @@ const techs: TechItem[] = [
   },
   {
     name: '机器学习',
-    desc: '数据分析 / 模型训练 / 深度学习',
+    desc: '数据分析 / 模型训练 / 深度学习 / AI',
     detail:
-      '机器学习是人工智能的重要基础，研究如何让计算机通过数据学习规律并完成预测、分类等任务。你将学习机器学习的基本原理、常见模型以及模型训练方法，并通过真实数据集完成实践项目。<br />课程会循序渐进，从 Python 基础到机器学习算法，再到深度学习，为后续 AI 方向打下坚实基础。<br /><br /><b>你将学习</b><br />Python 数据分析<br />NumPy、Pandas<br />Scikit-learn<br />PyTorch<br />模型训练与数据处理<br /><br /><b>适合你</b><br />喜欢数学和数据分析，希望通过模型解决实际问题，对 AI 技术充满兴趣。',
+      '机器学习是人工智能的重要基础，研究如何让计算机通过数据学习规律并完成预测、分类等任务。你将学习机器学习的基本原理、常见模型以及模型训练方法，并通过真实数据集完成实践项目。<br />课程会循序渐进，从 Python 基础到机器学习算法，再到深度学习、神经网络，并在此基础上进阶到 NLP、计算机视觉、大语言模型等前沿 AI 方向，为后续 Agent 与 AI 应用开发打下坚实基础。<br /><br /><b>你将学习</b><br />Python 数据分析<br />NumPy、Pandas<br />Scikit-learn<br />PyTorch、神经网络<br />深度学习与模型训练<br />NLP / 计算机视觉<br />大语言模型（LLM）与 AI 应用<br /><br /><b>适合你</b><br />喜欢数学和数据分析，希望通过模型与 AI 技术解决实际问题，对智能应用开发充满兴趣。',
   },
   {
     name: '图形学',
@@ -177,7 +171,7 @@ export default function Section6() {
           onClick={handleClose}
         >
           <div
-            className={`bg-white rounded-xl shadow-lg overflow-hidden flex w-[90vw] max-w-[1000px] h-auto max-h-[85vh] lg:h-[70vh] lg:max-h-[700px] relative ${closing ? 'animate-[slideOutLeft_0.5s_cubic-bezier(0.4,0,0.2,1)]' : 'animate-[slideInRight_0.8s_cubic-bezier(0.16,1,0.3,1)]'}`}
+            className={`bg-white rounded-xl shadow-lg overflow-hidden flex w-[90vw] max-w-[1000px] h-auto max-h-[85vh] relative ${closing ? 'animate-[slideOutLeft_0.5s_cubic-bezier(0.4,0,0.2,1)]' : 'animate-[slideInRight_0.8s_cubic-bezier(0.16,1,0.3,1)]'}`}
             onClick={e => e.stopPropagation()}
           >
             <button
@@ -188,7 +182,7 @@ export default function Section6() {
               <span className="text-gray-800 text-lg leading-none">✕</span>
             </button>
 
-            <div className="flex-1 flex flex-col justify-center p-8 sm:p-12 overflow-y-auto card-content">
+            <div className="flex-1 flex flex-col justify-center px-8 py-10 sm:px-12 sm:py-14 overflow-y-auto card-content">
               <div className="mb-1 font-bebas text-xs tracking-[0.15em] text-accent uppercase">
                 TECH
               </div>
