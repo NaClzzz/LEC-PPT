@@ -1,46 +1,35 @@
-import { useEffect, useRef, type ReactNode } from 'react'
+import { useEffect, useRef } from 'react'
 import GridMotion from '../components/GridMotion'
 
-const gridItems: (string | ReactNode)[] = [
+const gridItems: string[] = [
   'https://trudbot-md-img.oss-cn-shanghai.aliyuncs.com/202407172336220.jpg',
-  <div key="1" className="text-sm sm:text-2xl">
-    全国大学生软件大赛
-  </div>,
+  'https://ziro.oss-cn-shanghai.aliyuncs.com/achievements/56184878cff8ae5f5f8f969e25308627.webp',
   'https://trudbot-md-img.oss-cn-shanghai.aliyuncs.com/202407172336219.jpg',
-  '省级奖项 100+',
   'https://trudbot-md-img.oss-cn-shanghai.aliyuncs.com/202407172336218.jpg',
   'https://trudbot-md-img.oss-cn-shanghai.aliyuncs.com/202407172336217.png',
-  <div key="2" className="text-sm sm:text-2xl">
-    挑战杯 金奖
-  </div>,
+  'https://ziro.oss-cn-shanghai.aliyuncs.com/achievements/933a9fec32e6cc0a74360a4a30681d98.webp',
   'https://trudbot-md-img.oss-cn-shanghai.aliyuncs.com/202407172336216.jpg',
-  'CCCC 团体程序设计天梯赛',
   'https://ziro.oss-cn-shanghai.aliyuncs.com/achievements/%E9%99%88%E6%98%B1%E7%92%8B%E7%9D%BF%E6%8A%97%E5%9B%BD%E8%B5%9B.webp',
-  <div key="3" className="text-sm sm:text-2xl">
-    {' '}
-    CCF CAT 全国算法精英大赛
-  </div>,
+  'https://ziro.oss-cn-shanghai.aliyuncs.com/achievements/a285175c79272781e9abfa4964ea9828.webp',
   'https://trudbot-md-img.oss-cn-shanghai.aliyuncs.com/202407172336213.jpg',
   'https://ziro.oss-cn-shanghai.aliyuncs.com/achievements/CCCC2025GPLT09064_%E5%85%A8%E5%9B%BD%E6%80%BB%E5%86%B3%E8%B5%9B_%E5%9B%A2%E9%98%9F%E4%BA%8C%E7%AD%89%E5%A5%96_%E8%A5%BF%E5%8D%97%E7%9F%B3%E6%B2%B9%E5%A4%A7%E5%AD%A6_swpu1_%E9%BE%9A%E4%BA%91%E9%A3%9E_00.webp',
-  '省级奖项 100+',
   'https://trudbot-md-img.oss-cn-shanghai.aliyuncs.com/202407172336212.jpg',
-  <div key="4" className="text-sm sm:text-2xl">
-    ACM-ICPC 区域赛
-  </div>,
+  'https://ziro.oss-cn-shanghai.aliyuncs.com/achievements/ade0100a4608d956435a05eed09cb3b1.webp',
   'https://trudbot-md-img.oss-cn-shanghai.aliyuncs.com/202407172336211.jpg',
   'https://trudbot-md-img.oss-cn-shanghai.aliyuncs.com/202407172336215.jpg',
-  '国家级奖项 50+',
   'https://trudbot-md-img.oss-cn-shanghai.aliyuncs.com/202407172336208.jpg',
-  <div key="5" className="text-sm sm:text-2xl">
-    期待你的加入
-  </div>,
+  'https://ziro.oss-cn-shanghai.aliyuncs.com/achievements/%E5%85%A8%E5%9B%BD%E6%80%BB%E5%86%B3%E8%B5%9B_%E8%BD%AF%E4%BB%B6%E8%B5%9B_C%2B%2BB%E7%BB%84_%E4%BA%8C%E7%AD%89%E5%A5%96_%E9%93%89%E7%BB%8D%E6%99%96_1702034415_2951555.webp',
   'https://trudbot-md-img.oss-cn-shanghai.aliyuncs.com/202407172336207.jpg',
-  'https://trudbot-md-img.oss-cn-shanghai.aliyuncs.com/202407172336206.jpg',
-  '毕业生去向：大厂 80%',
+  'https://ziro.oss-cn-shanghai.aliyuncs.com/achievements/Snipaste_2026-08-04_21-04-55.webp',
   'https://trudbot-md-img.oss-cn-shanghai.aliyuncs.com/202407172336205.jpg',
   'https://trudbot-md-img.oss-cn-shanghai.aliyuncs.com/202407172336204.jpg',
   'https://trudbot-md-img.oss-cn-shanghai.aliyuncs.com/202407172336203.jpg',
   'https://trudbot-md-img.oss-cn-shanghai.aliyuncs.com/202407172336201.jpg',
+  'https://trudbot-md-img.oss-cn-shanghai.aliyuncs.com/202407172336219.jpg',
+  'https://trudbot-md-img.oss-cn-shanghai.aliyuncs.com/202407172336213.jpg',
+  'https://trudbot-md-img.oss-cn-shanghai.aliyuncs.com/202407172336220.jpg',
+  'https://ziro.oss-cn-shanghai.aliyuncs.com/achievements/%E5%85%A8%E5%9B%BD%E6%80%BB%E5%86%B3%E8%B5%9B_%E8%BD%AF%E4%BB%B6%E8%B5%9B_C%2B%2BB%E7%BB%84_%E4%BA%8C%E7%AD%89%E5%A5%96_%E9%93%89%E7%BB%8D%E6%99%96_1702034415_2951555.webp',
+  'https://ziro.oss-cn-shanghai.aliyuncs.com/achievements/CCCC2025GPLT09064_%E5%85%A8%E5%9B%BD%E6%80%BB%E5%86%B3%E8%B5%9B_%E5%9B%A2%E9%98%9F%E4%BA%8C%E7%AD%89%E5%A5%96_%E8%A5%BF%E5%8D%97%E7%9F%B3%E6%B2%B9%E5%A4%A7%E5%AD%A6_swpu1_%E9%BE%9A%E4%BA%91%E9%A3%9E_00.webp',
 ]
 
 export default function Section4() {

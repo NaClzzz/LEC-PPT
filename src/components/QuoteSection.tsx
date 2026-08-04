@@ -26,7 +26,7 @@ const scrambleChars = '零一二三四五六七八九十百千万亿ABCDEFGHIJKL
 
 function doScramble(el: HTMLElement, final: string) {
   const lines = final.split('\n')
-  const SPEED = 0.15
+  const SPEED = 0.35
   el.innerHTML = ''
   const allSpans: HTMLElement[] = []
   lines.forEach((line, li) => {
