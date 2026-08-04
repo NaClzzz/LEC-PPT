@@ -29,12 +29,12 @@ export default function Section7() {
 
         <h2 className="ch-title mb-8 cursor-default">
           <div className="line-wrap overflow-hidden leading-[1.15]">
-            <span className="line-inner block" style={{ transform: 'translateY(110%)', letterSpacing: '-0.03em', transition: 'transform .9s cubic-bezier(0.76,0,0.24,1), letter-spacing .6s ease, filter 1.1s cubic-bezier(0.76,0,0.24,1)' }}>
+            <span className="line-inner block" style={{ transform: 'translateY(110%)', letterSpacing: '-0.03em', transition: 'transform .7s cubic-bezier(0.76,0,0.24,1), letter-spacing .6s ease, filter .85s cubic-bezier(0.76,0,0.24,1)' }}>
                <span className="text-3xl font-bold text-gray-800 sm:text-5xl md:text-7xl lg:text-8xl">规范制度</span>
             </span>
           </div>
           <div className="line-wrap overflow-hidden leading-[1.15]">
-            <span className="line-inner block" style={{ transform: 'translateY(110%)', letterSpacing: '-0.03em', transition: 'transform .9s cubic-bezier(0.76,0,0.24,1) .08s, letter-spacing .6s ease .08s, filter 1.1s cubic-bezier(0.76,0,0.24,1) .08s' }}>
+            <span className="line-inner block" style={{ transform: 'translateY(110%)', letterSpacing: '-0.03em', transition: 'transform .7s cubic-bezier(0.76,0,0.24,1) .08s, letter-spacing .6s ease .08s, filter .85s cubic-bezier(0.76,0,0.24,1) .08s' }}>
                <span className="text-3xl font-bold text-gray-800 sm:text-5xl md:text-7xl lg:text-8xl">为成长护航</span>
             </span>
           </div>
@@ -44,13 +44,13 @@ export default function Section7() {
           <div className="space-y-10">
             <div>
               <div className="mb-3 border-b border-gray-300/40 pb-2 text-sm tracking-[0.15em] text-gray-400 uppercase">考勤</div>
-              <p className="body-p font-misans-light text-[1.05rem] leading-[1.75] text-gray-500" style={{ opacity: 0, transform: 'translateY(24px)', transition: 'opacity .8s cubic-bezier(0.76,0,0.24,1) .3s, transform .8s cubic-bezier(0.76,0,0.24,1) .3s' }}>
+              <p className="body-p font-misans-light text-[1.05rem] leading-[1.75] text-gray-500" style={{ opacity: 0, transform: 'translateY(24px)', transition: 'opacity .65s cubic-bezier(0.76,0,0.24,1) .3s, transform .65s cubic-bezier(0.76,0,0.24,1) .3s' }}>
                 每周 <strong className="relative font-semibold text-gray-800">28 小时</strong> 打卡，弹性安排，合理平衡学习与项目时间。
               </p>
             </div>
             <div>
               <div className="mb-3 border-b border-gray-300/40 pb-2 text-sm tracking-[0.15em] text-gray-400 uppercase">例会</div>
-              <p className="body-p font-misans-light text-[1.05rem] leading-[1.75] text-gray-500" style={{ opacity: 0, transform: 'translateY(24px)', transition: 'opacity .8s cubic-bezier(0.76,0,0.24,1) .45s, transform .8s cubic-bezier(0.76,0,0.24,1) .45s' }}>
+              <p className="body-p font-misans-light text-[1.05rem] leading-[1.75] text-gray-500" style={{ opacity: 0, transform: 'translateY(24px)', transition: 'opacity .65s cubic-bezier(0.76,0,0.24,1) .45s, transform .65s cubic-bezier(0.76,0,0.24,1) .45s' }}>
                 定期开展团队例会，同步学习进度，交流技术难点，规划阶段目标。
               </p>
             </div>
@@ -59,7 +59,7 @@ export default function Section7() {
             <div className="mb-3 border-b border-gray-300/40 pb-2 text-sm tracking-[0.15em] text-gray-400 uppercase">学习交流</div>
             <ul className="space-y-1">
               {[ '结对编程 — 以老带新，快速上手实际项目','技术分享会 — 成员轮流主讲，拓宽知识面', '保研护航 — 学长学姐们的资源与亲身经验分享'].map((t, i) => (
-                <li key={i} className="body-p font-misans-light text-[1.05rem] leading-[1.75] text-gray-500" style={{ opacity: 0, transform: 'translateY(24px)', transition: `opacity .8s cubic-bezier(0.76,0,0.24,1) ${.6 + i * .1}s, transform .8s cubic-bezier(0.76,0,0.24,1) ${.6 + i * .1}s` }}>
+                <li key={i} className="body-p font-misans-light text-[1.05rem] leading-[1.75] text-gray-500" style={{ opacity: 0, transform: 'translateY(24px)', transition: `opacity .65s cubic-bezier(0.76,0,0.24,1) ${.6 + i * .1}s, transform .65s cubic-bezier(0.76,0,0.24,1) ${.6 + i * .1}s` }}>
                   <span className="mr-2 text-accent">—</span>
                   <strong className="font-semibold text-gray-800">{t.split(' — ')[0]}</strong>
                   <span className="text-gray-400"> — {t.split(' — ')[1]}</span>

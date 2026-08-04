@@ -78,7 +78,7 @@ export default function Section4() {
                 transform: 'translateY(110%)',
                 letterSpacing: '-0.03em',
                 transition:
-                  'transform .9s cubic-bezier(0.76,0,0.24,1), letter-spacing .6s ease, filter 1.1s cubic-bezier(0.76,0,0.24,1)',
+                  'transform .7s cubic-bezier(0.76,0,0.24,1), letter-spacing .6s ease, filter .85s cubic-bezier(0.76,0,0.24,1)',
               }}
             >
               <span className="text-3xl font-bold text-gray-800 sm:text-5xl md:text-7xl lg:text-8xl">
@@ -93,7 +93,7 @@ export default function Section4() {
                 transform: 'translateY(110%)',
                 letterSpacing: '-0.03em',
                 transition:
-                  'transform .9s cubic-bezier(0.76,0,0.24,1) .08s, letter-spacing .6s ease .08s, filter 1.1s cubic-bezier(0.76,0,0.24,1) .08s',
+                  'transform .7s cubic-bezier(0.76,0,0.24,1) .08s, letter-spacing .6s ease .08s, filter .85s cubic-bezier(0.76,0,0.24,1) .08s',
               }}
             >
               <span className="text-3xl font-bold text-gray-800 sm:text-5xl md:text-7xl lg:text-8xl">
@@ -115,7 +115,7 @@ export default function Section4() {
                 opacity: 0,
                 transform: 'translateY(24px)',
                 transition:
-                  'opacity .8s cubic-bezier(0.76,0,0.24,1) .3s, transform .8s cubic-bezier(0.76,0,0.24,1) .3s',
+                  'opacity .65s cubic-bezier(0.76,0,0.24,1) .3s, transform .65s cubic-bezier(0.76,0,0.24,1) .3s',
               }}
             >
               累计获省、国赛奖项{' '}
@@ -134,7 +134,7 @@ export default function Section4() {
                 opacity: 0,
                 transform: 'translateY(24px)',
                 transition:
-                  'opacity .8s cubic-bezier(0.76,0,0.24,1) .45s, transform .8s cubic-bezier(0.76,0,0.24,1) .45s',
+                  'opacity .65s cubic-bezier(0.76,0,0.24,1) .45s, transform .65s cubic-bezier(0.76,0,0.24,1) .45s',
               }}
             >
               团队项目多次成功获{' '}
@@ -153,7 +153,7 @@ export default function Section4() {
                 opacity: 0,
                 transform: 'translateY(24px)',
                 transition:
-                  'opacity .8s cubic-bezier(0.76,0,0.24,1) .6s, transform .8s cubic-bezier(0.76,0,0.24,1) .6s',
+                  'opacity .65s cubic-bezier(0.76,0,0.24,1) .6s, transform .65s cubic-bezier(0.76,0,0.24,1) .6s',
               }}
             >
               持续产出优质软件作品，将学术创新与项目实践相结合，部分成果已落地服务于校园数字化生活。

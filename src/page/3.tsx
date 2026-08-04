@@ -45,7 +45,7 @@ export default function Section3() {
                     transform: 'translateY(110%)',
                     letterSpacing: '-0.03em',
                     transition:
-                      'transform .9s cubic-bezier(0.76,0,0.24,1), letter-spacing .6s ease, filter 1.1s cubic-bezier(0.76,0,0.24,1)',
+                      'transform .7s cubic-bezier(0.76,0,0.24,1), letter-spacing .6s ease, filter .85s cubic-bezier(0.76,0,0.24,1)',
                   }}
                 >
                   <span className="text-3xl font-bold text-gray-800 sm:text-5xl md:text-7xl lg:text-8xl">
@@ -60,7 +60,7 @@ export default function Section3() {
                     transform: 'translateY(110%)',
                     letterSpacing: '-0.03em',
                     transition:
-                      'transform .9s cubic-bezier(0.76,0,0.24,1) .08s, letter-spacing .6s ease .08s, filter 1.1s cubic-bezier(0.76,0,0.24,1) .08s',
+                      'transform .7s cubic-bezier(0.76,0,0.24,1) .08s, letter-spacing .6s ease .08s, filter .85s cubic-bezier(0.76,0,0.24,1) .08s',
                   }}
                 >
                   <span className="text-3xl font-bold text-gray-800 sm:text-5xl md:text-7xl lg:text-8xl">
@@ -84,7 +84,7 @@ export default function Section3() {
                     opacity: 0,
                     transform: 'translateY(24px)',
                     transition:
-                      'opacity .8s cubic-bezier(0.76,0,0.24,1) .3s, transform .8s cubic-bezier(0.76,0,0.24,1) .3s',
+                      'opacity .65s cubic-bezier(0.76,0,0.24,1) .3s, transform .65s cubic-bezier(0.76,0,0.24,1) .3s',
                   }}
                 >
                   乐程软件工作室正式成立，怀着
@@ -108,7 +108,7 @@ export default function Section3() {
                     opacity: 0,
                     transform: 'translateY(24px)',
                     transition:
-                      'opacity .8s cubic-bezier(0.76,0,0.24,1) .4s, transform .8s cubic-bezier(0.76,0,0.24,1) .4s',
+                      'opacity .65s cubic-bezier(0.76,0,0.24,1) .4s, transform .65s cubic-bezier(0.76,0,0.24,1) .4s',
                   }}
                 >
                   团队创立初期，沉淀技术基础，积累项目经验。
@@ -127,7 +127,7 @@ export default function Section3() {
                     opacity: 0,
                     transform: 'translateY(24px)',
                     transition:
-                      'opacity .8s cubic-bezier(0.76,0,0.24,1) .5s, transform .8s cubic-bezier(0.76,0,0.24,1) .5s',
+                      'opacity .65s cubic-bezier(0.76,0,0.24,1) .5s, transform .65s cubic-bezier(0.76,0,0.24,1) .5s',
                   }}
                 >
                   保研、就业齐发展，在各项学科竞赛中崭露头角，获省、国赛奖项数十项。
@@ -146,7 +146,7 @@ export default function Section3() {
                     opacity: 0,
                     transform: 'translateY(24px)',
                     transition:
-                      'opacity .8s cubic-bezier(0.76,0,0.24,1) .6s, transform .8s cubic-bezier(0.76,0,0.24,1) .6s',
+                      'opacity .65s cubic-bezier(0.76,0,0.24,1) .6s, transform .65s cubic-bezier(0.76,0,0.24,1) .6s',
                   }}
                 >
                   团队规模扩大至 30 余人 ，技术方向拓展至 Agent 开发、图形学、机器学习等
@@ -158,7 +158,7 @@ export default function Section3() {
             </div>
           </div>
 
-          <div className="w-full shrink-0 md:mr-16 md:mt-10 md:w-[520px]">
+          <div className="hidden w-full shrink-0 md:mr-16 md:mt-10 md:block md:w-[610px]">
             <div className="rounded-2xl border border-gray-200/60 bg-white/60 p-6">
               <div className="mb-4 font-bebas text-sm tracking-[0.3em] text-accent uppercase">
                 团队动态
@@ -169,8 +169,8 @@ export default function Section3() {
               >
                 <div className="relative space-y-8 pb-2">
                   <div className="absolute bottom-0 right-[18px] top-0 w-px bg-gray-300/60" />
-                  {history.map(h => (
-                    <div key={h.date} className="relative pr-16">
+                  {history.map((h, i) => (
+                    <div key={`${h.date}-${i}`} className="relative pr-16">
                       <div className="text-right">
                         <div className="font-bebas text-[1.6rem] leading-none text-accent">
                           {h.date}

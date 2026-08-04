@@ -133,7 +133,7 @@ export default function LoadingScreen({ onFinish }: { onFinish: () => void }) {
           style={{
             opacity: 0,
             transform: 'translateY(28px) scale(.96)',
-            transition: 'opacity .9s cubic-bezier(0.76,0,0.24,1), transform .9s cubic-bezier(0.76,0,0.24,1)',
+            transition: 'opacity .9s cubic-bezier(0.76,0,0.24,1), transform .7s cubic-bezier(0.76,0,0.24,1)',
           }}
         >
           一起用代码创造世界

@@ -97,7 +97,7 @@ export default function Section6() {
                 transform: 'translateY(110%)',
                 letterSpacing: '-0.03em',
                 transition:
-                  'transform .9s cubic-bezier(0.76,0,0.24,1), letter-spacing .6s ease, filter 1.1s cubic-bezier(0.76,0,0.24,1)',
+                  'transform .7s cubic-bezier(0.76,0,0.24,1), letter-spacing .6s ease, filter .85s cubic-bezier(0.76,0,0.24,1)',
               }}
             >
               <span className="text-3xl font-bold text-gray-800 sm:text-5xl md:text-7xl lg:text-8xl">
@@ -112,7 +112,7 @@ export default function Section6() {
                 transform: 'translateY(110%)',
                 letterSpacing: '-0.03em',
                 transition:
-                  'transform .9s cubic-bezier(0.76,0,0.24,1) .08s, letter-spacing .6s ease .08s, filter 1.1s cubic-bezier(0.76,0,0.24,1) .08s',
+                  'transform .7s cubic-bezier(0.76,0,0.24,1) .08s, letter-spacing .6s ease .08s, filter .85s cubic-bezier(0.76,0,0.24,1) .08s',
               }}
             >
               <span className="text-3xl font-bold text-gray-800 sm:text-5xl md:text-7xl lg:text-8xl">
@@ -158,7 +158,7 @@ export default function Section6() {
             opacity: 0,
             transform: 'translateY(24px)',
             transition:
-              'opacity .8s cubic-bezier(0.76,0,0.24,1) .7s, transform .8s cubic-bezier(0.76,0,0.24,1) .7s',
+              'opacity .65s cubic-bezier(0.76,0,0.24,1) .7s, transform .65s cubic-bezier(0.76,0,0.24,1) .7s',
           }}
         >
           点击卡片了解详情

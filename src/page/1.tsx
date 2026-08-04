@@ -117,7 +117,7 @@ SOF
           <div className="line-wrap overflow-hidden leading-[1.15]">
             <span
               className="line-inner block"
-              style={{ transform: 'translateY(110%)', letterSpacing: '-0.03em', transition: 'transform .9s cubic-bezier(0.76,0,0.24,1), letter-spacing .6s ease, filter 1.1s cubic-bezier(0.76,0,0.24,1)' }}
+              style={{ transform: 'translateY(110%)', letterSpacing: '-0.03em', transition: 'transform .7s cubic-bezier(0.76,0,0.24,1), letter-spacing .6s ease, filter .85s cubic-bezier(0.76,0,0.24,1)' }}
             >
 <span className="text-4xl font-bold text-gray-900 sm:text-5xl md:text-8xl lg:text-[7rem]">
                  2026招新
@@ -127,7 +127,7 @@ SOF
           <div className="line-wrap overflow-hidden leading-[1.15]">
             <span
               className="line-inner block"
-              style={{ transform: 'translateY(110%)', letterSpacing: '-0.03em', transition: 'transform .9s cubic-bezier(0.76,0,0.24,1) .08s, letter-spacing .6s ease .08s, filter 1.1s cubic-bezier(0.76,0,0.24,1) .08s' }}
+              style={{ transform: 'translateY(110%)', letterSpacing: '-0.03em', transition: 'transform .7s cubic-bezier(0.76,0,0.24,1) .08s, letter-spacing .6s ease .08s, filter .85s cubic-bezier(0.76,0,0.24,1) .08s' }}
             >
               <span className="text-4xl font-bold text-gray-900 sm:text-5xl md:text-8xl lg:text-[7rem]">
                 乐程软件工作室
