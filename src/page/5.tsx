@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react'
+import AlumniScroll from '../components/AlumniScroll'
 
 export default function Section5() {
   const ref = useRef<HTMLElement>(null)
@@ -29,10 +30,11 @@ export default function Section5() {
         FOUR
       </div>
 
-      <div className="relative z-10 ml-0 w-full max-w-4xl text-left md:ml-28">
-        <div className="mb-6 flex items-center gap-5 text-sm tracking-[0.3em] text-gray-400 before:block before:h-[1.5px] before:w-[30px] before:flex-shrink-0 before:bg-accent uppercase">
-          FOUR · 成员去向
-        </div>
+      <div className="relative z-10 flex w-full flex-col gap-10 lg:flex-row lg:items-start lg:justify-between">
+        <div className="w-full max-w-4xl text-left md:ml-28">
+          <div className="mb-6 flex items-center gap-5 text-sm tracking-[0.3em] text-gray-400 before:block before:h-[1.5px] before:w-[30px] before:flex-shrink-0 before:bg-accent uppercase">
+            FOUR · 成员去向
+          </div>
 
         <h2 className="ch-title mb-8 cursor-default">
           <div className="line-wrap overflow-hidden leading-[1.15]">
@@ -137,6 +139,11 @@ export default function Section5() {
         >
           这里有直系学长学姐沉淀多年的复试真题库与导师避坑指南，有能写进简历、让面试官眼前一亮的硬核项目经历，更有考研冲刺期团队为你主动减负、集体督学的陪伴机制。让你从大一起就站在学习的快车道上。
         </blockquote>
+        </div>
+
+        <div className="w-full lg:w-[700px] lg:flex-shrink-0 lg:mr-6">
+          <AlumniScroll />
+        </div>
       </div>
 
       <style>{`

@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import LenisScroll from './components/LenisScroll'
 import LoadingScreen from './components/LoadingScreen'
-import AlumniScroll from './components/AlumniScroll'
 import QuoteSection from './components/QuoteSection'
 import Ticker from './components/Ticker'
 import Section1 from './page/1'
@@ -110,7 +109,6 @@ function App() {
           <div id="progress-section-2"><Section3 /></div>
           <div id="progress-section-3"><Section4 /></div>
           <div id="progress-section-4"><Section5 /></div>
-          <AlumniScroll />
           <div id="progress-section-5"><Section6 /></div>
           <div id="progress-section-6"><Section7 /></div>
           <QuoteSection
