@@ -87,7 +87,12 @@ export default function Section3() {
                       'opacity .8s cubic-bezier(0.76,0,0.24,1) .3s, transform .8s cubic-bezier(0.76,0,0.24,1) .3s',
                   }}
                 >
-                  乐程软件工作室正式成立，怀着“学以致用，服务学校，走向社会”的宗旨。开启学生软件开发与科研探索之路。
+                  乐程软件工作室正式成立，怀着
+                  <strong className="relative font-semibold text-gray-800">
+                    {' '}
+                    “学以致用，服务学校，走向社会”{' '}
+                  </strong>
+                  的宗旨。开启学生软件开发与科研探索之路。
                 </p>
               </div>
               <div>
@@ -144,10 +149,10 @@ export default function Section3() {
                       'opacity .8s cubic-bezier(0.76,0,0.24,1) .6s, transform .8s cubic-bezier(0.76,0,0.24,1) .6s',
                   }}
                 >
-                  团队规模扩大至{' '}
-                  <strong className="relative font-semibold text-gray-800">30 余人</strong>
-                  ，技术方向拓展至 Agent
-                  开发、图形学、机器学习等前沿领域，成员去向覆盖字节、腾讯、阿里等一线互联网企业及电子科大、川大等知名高校。
+                  团队规模扩大至 30 余人 ，技术方向拓展至 Agent 开发、图形学、机器学习等
+                  <strong className="relative font-semibold text-gray-800"> 前沿领域 </strong>
+                  ，成员去向覆盖字节、腾讯、阿里等一线互联网企业及电子科大、川大等
+                  <strong className="relative font-semibold text-gray-800"> 知名高校 </strong>。
                 </p>
               </div>
             </div>
@@ -164,21 +169,21 @@ export default function Section3() {
               >
                 <div className="relative space-y-8 pb-2">
                   <div className="absolute bottom-0 right-[18px] top-0 w-px bg-gray-300/60" />
-                {history.map((h) => (
-                  <div key={h.date} className="relative pr-16">
-                    <div className="text-right">
-                      <div className="font-bebas text-[1.6rem] leading-none text-accent">
-                        {h.date}
+                  {history.map(h => (
+                    <div key={h.date} className="relative pr-16">
+                      <div className="text-right">
+                        <div className="font-bebas text-[1.6rem] leading-none text-accent">
+                          {h.date}
+                        </div>
+                        <p className="font-misans-light mt-2 text-[1.05rem] leading-[1.75] text-gray-500">
+                          {h.desc}
+                        </p>
                       </div>
-                      <p className="font-misans-light mt-2 text-[1.05rem] leading-[1.75] text-gray-500">
-                        {h.desc}
-                      </p>
+                      <div className="absolute right-3 top-1 flex h-3 w-3 items-center justify-center">
+                        <div className="h-2.5 w-2.5 rounded-full bg-accent" />
+                      </div>
                     </div>
-                    <div className="absolute right-3 top-1 flex h-3 w-3 items-center justify-center">
-                      <div className="h-2.5 w-2.5 rounded-full bg-accent" />
-                    </div>
-                  </div>
-                ))}
+                  ))}
                 </div>
               </div>
             </div>

@@ -24,14 +24,15 @@ export default function Section2() {
           io.unobserve(el)
         }
       },
-      { threshold: 0.12, rootMargin: '0px 0px -80px 0px' }
+      { threshold: 0.12, rootMargin: '0px 0px -80px 0px' },
     )
     io.observe(el)
     return () => io.disconnect()
   }, [])
 
   return (
-    <section id="section-2"
+    <section
+      id="section-2"
       ref={ref}
       className="relative flex min-h-screen items-center overflow-hidden bg-gray-100 px-6"
     >
@@ -50,7 +51,12 @@ export default function Section2() {
               <div className="line-wrap overflow-hidden leading-[1.15]">
                 <span
                   className="line-inner block"
-                  style={{ transform: 'translateY(110%)', letterSpacing: '-0.03em', transition: 'transform .9s cubic-bezier(0.76,0,0.24,1), letter-spacing .6s ease, filter 1.1s cubic-bezier(0.76,0,0.24,1)' }}
+                  style={{
+                    transform: 'translateY(110%)',
+                    letterSpacing: '-0.03em',
+                    transition:
+                      'transform .9s cubic-bezier(0.76,0,0.24,1), letter-spacing .6s ease, filter 1.1s cubic-bezier(0.76,0,0.24,1)',
+                  }}
                 >
                   <span className="text-3xl font-bold text-gray-800 sm:text-5xl md:text-7xl lg:text-8xl">
                     乐程软件工作室
@@ -60,7 +66,12 @@ export default function Section2() {
               <div className="line-wrap overflow-hidden leading-[1.15]">
                 <span
                   className="line-inner block"
-                  style={{ transform: 'translateY(110%)', letterSpacing: '-0.03em', transition: 'transform .9s cubic-bezier(0.76,0,0.24,1) .08s, letter-spacing .6s ease .08s, filter 1.1s cubic-bezier(0.76,0,0.24,1) .08s' }}
+                  style={{
+                    transform: 'translateY(110%)',
+                    letterSpacing: '-0.03em',
+                    transition:
+                      'transform .9s cubic-bezier(0.76,0,0.24,1) .08s, letter-spacing .6s ease .08s, filter 1.1s cubic-bezier(0.76,0,0.24,1) .08s',
+                  }}
                 >
                   <span className="text-3xl font-bold text-gray-800 sm:text-5xl md:text-7xl lg:text-8xl">
                     不止于代码
@@ -76,9 +87,18 @@ export default function Section2() {
                 </div>
                 <p
                   className="body-p font-misans-light text-[1.05rem] leading-[1.75] text-gray-500"
-                  style={{ opacity: 0, transform: 'translateY(24px)', transition: 'opacity .8s cubic-bezier(0.76,0,0.24,1) .4s, transform .8s cubic-bezier(0.76,0,0.24,1) .4s' }}
+                  style={{
+                    opacity: 0,
+                    transform: 'translateY(24px)',
+                    transition:
+                      'opacity .8s cubic-bezier(0.76,0,0.24,1) .4s, transform .8s cubic-bezier(0.76,0,0.24,1) .4s',
+                  }}
                 >
-                  乐程软件工作室（LEC SOFTWARE STUDIO）自 <strong className="relative font-semibold text-gray-800">2010 年 6 月</strong> 创立以来，已在软件开发和作品开发领域深耕十余年。我们是学生科研领域的佼佼者，致力于多方向的技术学习与人才培养。
+                  乐程软件工作室（LEC SOFTWARE STUDIO）自{' '}
+                  <strong className="relative font-semibold text-gray-800">2010 年 6 月</strong>{' '}
+                  创立以来，已在软件开发和作品开发领域深耕
+                  <strong className="relative font-semibold text-gray-800"> 十余年 </strong>
+                  。我们是学生科研领域的佼佼者，致力于多方向的技术学习与人才培养。
                 </p>
               </div>
               <div>
@@ -87,15 +107,31 @@ export default function Section2() {
                 </div>
                 <p
                   className="body-p font-misans-light text-[1.05rem] leading-[1.75] text-gray-500"
-                  style={{ opacity: 0, transform: 'translateY(24px)', transition: 'opacity .8s cubic-bezier(0.76,0,0.24,1) .55s, transform .8s cubic-bezier(0.76,0,0.24,1) .55s' }}
+                  style={{
+                    opacity: 0,
+                    transform: 'translateY(24px)',
+                    transition:
+                      'opacity .8s cubic-bezier(0.76,0,0.24,1) .55s, transform .8s cubic-bezier(0.76,0,0.24,1) .55s',
+                  }}
                 >
-                  团队目前有成员 <strong className="relative font-semibold text-gray-800">30 余人</strong>，采取每周 <strong className="relative font-semibold text-gray-800">28 小时</strong> 考勤制度，定期开展例会和学习交流，形成良好学风。涵盖前后端开发、算法竞赛、机器学习、游戏开发等多个领域。
+                  团队目前有成员{' '}
+                  <strong className="relative font-semibold text-gray-800">30 余人</strong>
+                  ，定期开展例会和学习交流，形成
+                  良好学风。涵盖全栈开发、人工智能、游戏开发、算法竞赛等多个领域。
                 </p>
               </div>
             </div>
           </div>
 
-          <div className="album-wrap hidden items-center -mr-40 md:flex" style={{ opacity: 0, transform: 'translateY(24px)', transition: 'opacity .8s cubic-bezier(0.76,0,0.24,1) .7s, transform .8s cubic-bezier(0.76,0,0.24,1) .7s' }}>
+          <div
+            className="album-wrap hidden items-center -mr-40 md:flex"
+            style={{
+              opacity: 0,
+              transform: 'translateY(24px)',
+              transition:
+                'opacity .8s cubic-bezier(0.76,0,0.24,1) .7s, transform .8s cubic-bezier(0.76,0,0.24,1) .7s',
+            }}
+          >
             <PhotoAlbum images={albumImages} labels={albumLabels} />
           </div>
         </div>
