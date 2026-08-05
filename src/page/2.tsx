@@ -46,7 +46,7 @@ export default function Section2() {
             ONE · 团队概况
           </div>
 
-          <h2 className="ch-title mb-20 cursor-default">
+          <h2 className="ch-title mb-[10px] lg:mb-20 cursor-default">
             <div className="line-wrap overflow-hidden leading-[1.15]">
               <span
                 className="line-inner block"
@@ -78,6 +78,10 @@ export default function Section2() {
               </span>
             </div>
           </h2>
+
+          <div className="w-full lg:hidden mb-4">
+            <PhotoAlbum images={albumImages} labels={albumLabels} />
+          </div>
 
           <div className="grid max-w-[1100px] gap-6 md:gap-12 md:grid-cols-2">
             <div>

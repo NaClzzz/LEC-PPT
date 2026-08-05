@@ -38,7 +38,7 @@ export default function PhotoAlbum({ images, labels }: PhotoAlbumProps) {
   if (images.length === 0) return null
 
   return (
-    <div className="relative w-[580px] flex-shrink-0">
+    <div className="relative w-full max-w-[400px] sm:w-[580px] flex-shrink-0">
       <div className="relative overflow-hidden rounded-lg bg-white shadow-md">
         <div className="aspect-[4/3] w-full overflow-hidden bg-gray-200">
           <img
