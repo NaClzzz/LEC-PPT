@@ -30,20 +30,20 @@ export default function Section8() {
         <h2 className="ch-title mb-8 cursor-default">
           <div className="line-wrap overflow-hidden leading-[1.15]">
             <span className="line-inner block" style={{ transform: 'translateY(110%)', letterSpacing: '-0.03em', transition: 'transform .7s cubic-bezier(0.76,0,0.24,1), letter-spacing .6s ease, filter .85s cubic-bezier(0.76,0,0.24,1)' }}>
-              <span className="text-3xl font-bold text-gray-800 sm:text-5xl md:text-7xl lg:text-8xl">加入我们</span>
+              <span className="text-2xl font-bold text-gray-800 sm:text-5xl md:text-7xl lg:text-8xl">加入我们</span>
             </span>
           </div>
           <div className="line-wrap overflow-hidden leading-[1.15]">
             <span className="line-inner block" style={{ transform: 'translateY(110%)', letterSpacing: '-0.03em', transition: 'transform .7s cubic-bezier(0.76,0,0.24,1) .08s, letter-spacing .6s ease .08s, filter .85s cubic-bezier(0.76,0,0.24,1) .08s' }}>
-               <span className="text-3xl font-bold text-gray-800 sm:text-5xl md:text-7xl lg:text-8xl">一起用代码创造世界</span>
+               <span className="text-2xl font-bold text-gray-800 sm:text-5xl md:text-7xl lg:text-8xl">一起用代码创造世界</span>
             </span>
           </div>
         </h2>
 
-        <p className="body-p max-w-[1000px] font-misans-light text-[1.05rem] leading-[1.75] text-gray-500" style={{ opacity: 0, transform: 'translateY(24px)', transition: 'opacity .65s cubic-bezier(0.76,0,0.24,1) .3s, transform .65s cubic-bezier(0.76,0,0.24,1) .3s' }}>
+        <p className="body-p max-w-[1000px] font-misans-light text-sm md:text-[1.05rem] leading-[1.75] text-gray-500" style={{ opacity: 0, transform: 'translateY(24px)', transition: 'opacity .65s cubic-bezier(0.76,0,0.24,1) .3s, transform .65s cubic-bezier(0.76,0,0.24,1) .3s' }}>
           如果你渴望在大学期间提升编程技能，参与实际项目开发，结交志同道合的朋友，为未来的职业发展<br/>或学术深造打下坚实基础，那么，不要犹豫，加入乐程软件工作室吧！
         </p>
-        <p className="body-p mb-10 max-w-[1000px] font-misans-light text-[1.05rem] leading-[1.75] text-gray-500" style={{ opacity: 0, transform: 'translateY(24px)', transition: 'opacity .65s cubic-bezier(0.76,0,0.24,1) .45s, transform .65s cubic-bezier(0.76,0,0.24,1) .45s' }}>
+        <p className="body-p mb-10 max-w-[1000px] font-misans-light text-sm md:text-[1.05rem] leading-[1.75] text-gray-500" style={{ opacity: 0, transform: 'translateY(24px)', transition: 'opacity .65s cubic-bezier(0.76,0,0.24,1) .45s, transform .65s cubic-bezier(0.76,0,0.24,1) .45s' }}>
           我们期待与你一起，在代码的海洋中遨游，用技术创造无限可能。
         </p>
 

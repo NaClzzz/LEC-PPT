@@ -57,7 +57,7 @@ export default function Section2() {
                     'transform .7s cubic-bezier(0.76,0,0.24,1), letter-spacing .6s ease, filter .85s cubic-bezier(0.76,0,0.24,1)',
                 }}
               >
-                <span className="text-3xl font-bold text-gray-800 sm:text-5xl md:text-7xl lg:text-8xl text-nowrap">
+                <span className="text-2xl font-bold text-gray-800 sm:text-5xl md:text-7xl lg:text-8xl text-nowrap">
                   乐程软件工作室
                 </span>
               </span>
@@ -72,7 +72,7 @@ export default function Section2() {
                     'transform .7s cubic-bezier(0.76,0,0.24,1) .08s, letter-spacing .6s ease .08s, filter .85s cubic-bezier(0.76,0,0.24,1) .08s',
                 }}
               >
-                <span className="text-3xl font-bold text-gray-800 sm:text-5xl md:text-7xl lg:text-8xl">
+                <span className="text-2xl font-bold text-gray-800 sm:text-5xl md:text-7xl lg:text-8xl">
                   不止于代码
                 </span>
               </span>
@@ -85,7 +85,7 @@ export default function Section2() {
                 团队概况
               </div>
               <p
-                className="body-p font-misans-light text-[1.05rem] leading-[1.75] text-gray-500"
+                className="body-p font-misans-light text-sm md:text-[1.05rem] leading-[1.75] text-gray-500"
                 style={{
                   opacity: 0,
                   transform: 'translateY(24px)',
@@ -105,7 +105,7 @@ export default function Section2() {
                 团队规模
               </div>
               <p
-                className="body-p font-misans-light text-[1.05rem] leading-[1.75] text-gray-500"
+                className="body-p font-misans-light text-sm md:text-[1.05rem] leading-[1.75] text-gray-500"
                 style={{
                   opacity: 0,
                   transform: 'translateY(24px)',

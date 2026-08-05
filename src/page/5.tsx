@@ -47,7 +47,7 @@ export default function Section5() {
                   'transform .7s cubic-bezier(0.76,0,0.24,1), letter-spacing .6s ease, filter .85s cubic-bezier(0.76,0,0.24,1)',
               }}
             >
-              <span className="text-3xl font-bold text-gray-800 sm:text-5xl md:text-7xl lg:text-8xl">
+              <span className="text-2xl font-bold text-gray-800 sm:text-5xl md:text-7xl lg:text-8xl">
                 卓越去向
               </span>
             </span>
@@ -62,7 +62,7 @@ export default function Section5() {
                   'transform .7s cubic-bezier(0.76,0,0.24,1) .08s, letter-spacing .6s ease .08s, filter .85s cubic-bezier(0.76,0,0.24,1) .08s',
               }}
             >
-              <span className="text-3xl font-bold text-gray-800 sm:text-5xl md:text-7xl lg:text-8xl">
+              <span className="text-2xl font-bold text-gray-800 sm:text-5xl md:text-7xl lg:text-8xl">
                 赴大厂名校
               </span>
             </span>
@@ -70,7 +70,7 @@ export default function Section5() {
         </h2>
 
         <p
-          className="body-p mb-8 max-w-[1100px] font-misans-light text-[1.05rem] leading-[1.75] text-gray-500"
+          className="body-p mb-8 max-w-[1100px] font-misans-light text-sm md:text-[1.05rem] leading-[1.75] text-gray-500"
           style={{
             opacity: 0,
             transform: 'translateY(24px)',
@@ -90,7 +90,7 @@ export default function Section5() {
               {['电子科技大学', '重庆大学', '天津大学', '北京航空航天大学'].map((s, i) => (
                 <li
                   key={s}
-                  className="body-p font-misans-light text-[1.05rem] leading-[1.75] text-gray-500"
+                  className="body-p font-misans-light text-sm md:text-[1.05rem] leading-[1.75] text-gray-500"
                   style={{
                     opacity: 0,
                     transform: 'translateY(24px)',
@@ -112,7 +112,7 @@ export default function Section5() {
               {['字节跳动', '腾讯', '阿里巴巴', '美团'].map((s, i) => (
                 <li
                   key={s}
-                  className="body-p font-misans-light text-[1.05rem] leading-[1.75] text-gray-500"
+                  className="body-p font-misans-light text-sm md:text-[1.05rem] leading-[1.75] text-gray-500"
                   style={{
                     opacity: 0,
                     transform: 'translateY(24px)',

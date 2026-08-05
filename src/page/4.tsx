@@ -82,7 +82,7 @@ style={{
                       'transform .7s cubic-bezier(0.76,0,0.24,1), letter-spacing .6s ease, filter .85s cubic-bezier(0.76,0,0.24,1), color .7s cubic-bezier(0.76,0,0.24,1)',
                   }}
                 >
-                  <span className="text-3xl font-bold text-gray-800 sm:text-5xl md:text-7xl lg:text-8xl">
+                  <span className="text-2xl font-bold text-gray-800 sm:text-5xl md:text-7xl lg:text-8xl">
                     硕果累累
               </span>
             </span>
@@ -97,7 +97,7 @@ style={{
                   'transform .7s cubic-bezier(0.76,0,0.24,1) .08s, letter-spacing .6s ease .08s, filter .85s cubic-bezier(0.76,0,0.24,1) .08s',
               }}
             >
-              <span className="text-3xl font-bold text-gray-800 sm:text-5xl md:text-7xl lg:text-8xl">
+              <span className="text-2xl font-bold text-gray-800 sm:text-5xl md:text-7xl lg:text-8xl">
                 用作品说话
               </span>
             </span>
@@ -111,7 +111,7 @@ style={{
               学科竞赛
             </div>
             <p
-              className="body-p font-misans-light text-[1.05rem] leading-[1.75] text-gray-500"
+              className="body-p font-misans-light text-sm md:text-[1.05rem] leading-[1.75] text-gray-500"
               style={{
                 opacity: 0,
                 transform: 'translateY(24px)',
@@ -130,7 +130,7 @@ style={{
               科研立项
             </div>
             <p
-              className="body-p font-misans-light text-[1.05rem] leading-[1.75] text-gray-500"
+              className="body-p font-misans-light text-sm md:text-[1.05rem] leading-[1.75] text-gray-500"
               style={{
                 opacity: 0,
                 transform: 'translateY(24px)',
@@ -149,7 +149,7 @@ style={{
               项目成果
             </div>
             <p
-              className="body-p font-misans-light text-[1.05rem] leading-[1.75] text-gray-500"
+              className="body-p font-misans-light text-sm md:text-[1.05rem] leading-[1.75] text-gray-500"
               style={{
                 opacity: 0,
                 transform: 'translateY(24px)',
