@@ -2,29 +2,29 @@ import { useState } from 'react'
 
 const allMembers: { grade: string; name: string; dest: string; type: string; qq?: string }[] = [
   { grade: '2025', name: '王硕', dest: '软件工程', type: '', qq: '3563745142' },
-  { grade: '2025', name: '赵佳琦', dest: '物联网', type: '', qq: '3594513696' },
-  { grade: '2025', name: '付豪', dest: '网络安全', type: '', qq: '2643673981' },
+  { grade: '2025', name: '赵佳琦', dest: '物联网工程', type: '', qq: '3594513696' },
+  { grade: '2025', name: '付豪', dest: '网络空间安全', type: '', qq: '2643673981' },
   { grade: '2025', name: '铉绍晖', dest: '软件工程', type: '', qq: '3338001408' },
   { grade: '2025', name: '代泽阳', dest: '软件工程', type: '', qq: '3371437652' },
   { grade: '2025', name: '朱俊豪', dest: '软件工程', type: '', qq: '1438644314' },
   { grade: '2025', name: '赵亦康', dest: '软件工程', type: '', qq: '2148809690' },
   { grade: '2025', name: '罗闽渝', dest: '软件工程', type: '', qq: '2145432672' },
-  { grade: '2025', name: '黄禹霖', dest: '物联网', type: '', qq: '2543037355' },
-  { grade: '2025', name: '林佳政', dest: '物联网', type: '', qq: '1661874625' },
-  { grade: '2025', name: '汪美琳', dest: '物联网', type: '', qq: '1700930362' },
+  { grade: '2025', name: '黄禹霖', dest: '物联网工程', type: '', qq: '2543037355' },
+  { grade: '2025', name: '林佳政', dest: '物联网工程', type: '', qq: '1661874625' },
+  { grade: '2025', name: '汪美琳', dest: '物联网工程', type: '', qq: '1700930362' },
 
-  { grade: '2024', name: '徐琦', dest: '物联网', type: '', qq: '3029281534' },
-  { grade: '2024', name: '曾权军', dest: '物联网', type: '', qq: '543298913' },
+  { grade: '2024', name: '徐琦', dest: '物联网工程', type: '', qq: '3029281534' },
+  { grade: '2024', name: '曾权军', dest: '物联网工程', type: '', qq: '543298913' },
   { grade: '2024', name: '龚云飞', dest: '软件工程', type: '', qq: '2308777176' },
-  { grade: '2024', name: '宁靖阳', dest: '物联网', type: '', qq: '3312584336' },
+  { grade: '2024', name: '宁靖阳', dest: '物联网工程', type: '', qq: '3312584336' },
   { grade: '2024', name: '陈昱璋', dest: '软件工程', type: '', qq: '2844042601' },
   { grade: '2024', name: '霍奂鑫', dest: '计算机科学与技术', type: '', qq: '3814212388' },
-  { grade: '2024', name: '郝华溢', dest: '物联网', type: '', qq: '3134846106' },
-  { grade: '2024', name: '邹梓熙', dest: '物联网', type: '', qq: '2928781682' },
-  { grade: '2024', name: '刘鸿春', dest: '物联网', type: '', qq: '2991323733' },
-  { grade: '2024', name: '匡思进', dest: '物联网', type: '', qq: '3463239220' },
+  { grade: '2024', name: '郝华溢', dest: '物联网工程', type: '', qq: '3134846106' },
+  { grade: '2024', name: '邹梓熙', dest: '物联网工程', type: '', qq: '2928781682' },
+  { grade: '2024', name: '刘鸿春', dest: '物联网工程', type: '', qq: '2991323733' },
+  { grade: '2024', name: '匡思进', dest: '物联网工程', type: '', qq: '3463239220' },
   { grade: '2024', name: '鲍怡君', dest: '计算机科学与技术', type: '', qq: '1906310787' },
-  { grade: '2024', name: '唐韵梅', dest: '物联网', type: '', qq: '1922287870' },
+  { grade: '2024', name: '唐韵梅', dest: '物联网工程', type: '', qq: '1922287870' },
 
   { grade: '2023', name: '陈居浩', dest: '软件工程', type: '', qq: '1923185303' },
   { grade: '2023', name: '付泽东', dest: '软件工程', type: '', qq: '2069083570' },
@@ -34,7 +34,7 @@ const allMembers: { grade: string; name: string; dest: string; type: string; qq?
   { grade: '2023', name: '叶孜', dest: '软件工程', type: '', qq: '3034499136' },
   { grade: '2023', name: '肖鑫', dest: '软件工程', type: '', qq: '3255489560' },
   { grade: '2023', name: '郭鹤', dest: '软件工程', type: '', qq: '3551147139' },
-  { grade: '2023', name: '孟令宇', dest: '物联网', type: '', qq: '819978005' },
+  { grade: '2023', name: '孟令宇', dest: '物联网工程', type: '', qq: '819978005' },
   { grade: '2023', name: '刁俊熙', dest: '土木工程', type: '', qq: '3169578920' },
 
   { grade: '2022', name: '隋炀', dest: '天津大学', type: '深造', qq: '75748326' },
@@ -92,11 +92,9 @@ export default function AlumniScroll() {
 
   return (
     <div className="flex h-[650px] md:h-[680px] flex-col rounded-2xl border border-gray-200/60 bg-white/60 p-4 md:p-8">
-      <h3 className="mb-4 text-xl font-bold tracking-[-0.02em] text-gray-900">
-        往届成员
-      </h3>
+      <h3 className="mb-4 text-xl font-bold tracking-[-0.02em] text-gray-900">往届成员</h3>
       <div className="mb-2 md:mb-6 flex flex-wrap gap-2 md:gap-4 border-b border-gray-200 pb-1 md:pb-3">
-        {gradeLabels.map((g) => (
+        {gradeLabels.map(g => (
           <button
             key={g}
             onClick={() => setActiveGrade(g)}
@@ -109,21 +107,36 @@ export default function AlumniScroll() {
       </div>
 
       <div className="grid grid-cols-1 content-start gap-4 sm:grid-cols-2 lg:grid-cols-3 overflow-y-auto">
-        {filtered.map((m) => (
-          <div key={m.name} className="relative flex items-center gap-3 rounded-lg border border-gray-100 bg-gray-50 px-4 h-16 md:gap-4 md:px-5 md:h-20">
+        {filtered.map(m => (
+          <div
+            key={m.name}
+            className="relative flex items-center gap-3 rounded-lg border border-gray-100 bg-gray-50 px-4 h-16 md:gap-4 md:px-5 md:h-20"
+          >
             {m.type && (
-              <span className={`absolute top-1.5 right-2 rounded px-1 text-[0.55rem] md:text-[0.6rem] ${m.type === '深造' ? 'bg-violet-500/10 text-violet-500' : 'bg-accent/10 text-accent'}`}>{m.type}</span>
+              <span
+                className={`absolute top-1.5 right-2 rounded px-1 text-[0.55rem] md:text-[0.6rem] ${m.type === '深造' ? 'bg-violet-500/10 text-violet-500' : 'bg-accent/10 text-accent'}`}
+              >
+                {m.type}
+              </span>
             )}
             <div className="flex h-10 w-10 md:h-12 md:w-12 flex-shrink-0 items-center justify-center rounded-full bg-accent/10 text-sm md:text-base font-semibold text-accent overflow-hidden">
               {m.qq ? (
-                <img src={`http://q1.qlogo.cn/g?b=qq&nk=${m.qq}&s=100`} alt="" className="h-full w-full object-cover" />
+                <img
+                  src={`http://q1.qlogo.cn/g?b=qq&nk=${m.qq}&s=100`}
+                  alt=""
+                  className="h-full w-full object-cover"
+                />
               ) : (
                 m.name[0]
               )}
             </div>
             <div className="min-w-0 flex-1">
-              <div className="truncate text-sm md:text-base font-semibold text-gray-800">{m.name}</div>
-              <div className="line-clamp-2 font-misans-light text-xs md:text-sm leading-tight text-gray-400">{m.dest}</div>
+              <div className="truncate text-sm md:text-base font-semibold text-gray-800">
+                {m.name}
+              </div>
+              <div className="line-clamp-2 font-misans-light text-xs md:text-sm leading-tight text-gray-400">
+                {m.dest}
+              </div>
             </div>
           </div>
         ))}
