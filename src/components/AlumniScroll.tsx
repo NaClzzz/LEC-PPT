@@ -123,7 +123,7 @@ export default function AlumniScroll() {
             </div>
             <div className="min-w-0 flex-1">
               <div className="truncate text-base font-semibold text-gray-800">{m.name}</div>
-              <div className="truncate font-misans-light text-sm text-gray-400">{m.dest}</div>
+              <div className="line-clamp-2 font-misans-light text-sm leading-tight text-gray-400">{m.dest}</div>
             </div>
           </div>
         ))}

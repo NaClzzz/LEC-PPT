@@ -106,7 +106,7 @@ export default function LoadingScreen({ onFinish }: { onFinish: () => void }) {
 
       <div
         ref={introRef}
-        className="fixed inset-0 z-[8999] flex flex-col items-center justify-center bg-white"
+        className="fixed inset-0 z-[8999] flex flex-col items-center justify-center bg-white -translate-y-10"
         style={{
           pointerEvents: 'none',
           transition: 'opacity 1s cubic-bezier(0.76,0,0.24,1)',
@@ -129,7 +129,7 @@ export default function LoadingScreen({ onFinish }: { onFinish: () => void }) {
         </p>
         <h2
           ref={phraseRef}
-          className="font-serif text-[clamp(2.8rem,10vw,8rem)] font-bold leading-none tracking-[-0.04em] text-black"
+          className="font-serif text-[clamp(2rem,7vw,7rem)] font-bold leading-none tracking-[-0.04em] text-black mt-12"
           style={{
             opacity: 0,
             transform: 'translateY(28px) scale(.96)',

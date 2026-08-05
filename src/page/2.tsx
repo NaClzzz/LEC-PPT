@@ -40,100 +40,90 @@ export default function Section2() {
         ONE
       </div>
 
-      <div className="relative z-10 ml-0 w-full max-w-7xl text-left md:ml-28">
-        <div className="flex gap-16">
-          <div className="flex-1">
-            <div className="mb-6 flex items-center gap-5 text-sm tracking-[0.3em] text-gray-400 before:block before:h-[1.5px] before:w-[30px] before:flex-shrink-0 before:bg-accent uppercase">
-              ONE · 团队概况
-            </div>
-
-            <h2 className="ch-title mb-20 cursor-default">
-              <div className="line-wrap overflow-hidden leading-[1.15]">
-                <span
-                  className="line-inner block"
-                  style={{
-                    transform: 'translateY(110%)',
-                    letterSpacing: '-0.03em',
-                    transition:
-                      'transform .7s cubic-bezier(0.76,0,0.24,1), letter-spacing .6s ease, filter .85s cubic-bezier(0.76,0,0.24,1)',
-                  }}
-                >
-                  <span className="text-3xl font-bold text-gray-800 sm:text-5xl md:text-7xl lg:text-8xl">
-                    乐程软件工作室
-                  </span>
-                </span>
-              </div>
-              <div className="line-wrap overflow-hidden leading-[1.15]">
-                <span
-                  className="line-inner block"
-                  style={{
-                    transform: 'translateY(110%)',
-                    letterSpacing: '-0.03em',
-                    transition:
-                      'transform .7s cubic-bezier(0.76,0,0.24,1) .08s, letter-spacing .6s ease .08s, filter .85s cubic-bezier(0.76,0,0.24,1) .08s',
-                  }}
-                >
-                  <span className="text-3xl font-bold text-gray-800 sm:text-5xl md:text-7xl lg:text-8xl">
-                    不止于代码
-                  </span>
-                </span>
-              </div>
-            </h2>
-
-            <div className="grid max-w-[1100px] gap-6 md:gap-12 md:grid-cols-2">
-              <div>
-                <div className="mb-5 border-b border-gray-300/40 pb-3 text-sm tracking-[0.15em] text-gray-400 uppercase">
-                  团队概况
-                </div>
-                <p
-                  className="body-p font-misans-light text-[1.05rem] leading-[1.75] text-gray-500"
-                  style={{
-                    opacity: 0,
-                    transform: 'translateY(24px)',
-                    transition:
-                      'opacity .65s cubic-bezier(0.76,0,0.24,1) .4s, transform .65s cubic-bezier(0.76,0,0.24,1) .4s',
-                  }}
-                >
-                  乐程软件工作室（LEC SOFTWARE STUDIO）自{' '}
-                  <strong className="relative font-semibold text-gray-800">2010 年 6 月</strong>{' '}
-                  创立以来，已在软件开发和作品开发领域深耕
-                  <strong className="relative font-semibold text-gray-800"> 十余年 </strong>
-                  。我们是学生科研领域的佼佼者，致力于多方向的技术学习与人才培养。
-                </p>
-              </div>
-              <div>
-                <div className="mb-5 border-b border-gray-300/40 pb-3 text-sm tracking-[0.15em] text-gray-400 uppercase">
-                  团队规模
-                </div>
-                <p
-                  className="body-p font-misans-light text-[1.05rem] leading-[1.75] text-gray-500"
-                  style={{
-                    opacity: 0,
-                    transform: 'translateY(24px)',
-                    transition:
-                      'opacity .65s cubic-bezier(0.76,0,0.24,1) .55s, transform .65s cubic-bezier(0.76,0,0.24,1) .55s',
-                  }}
-                >
-                  团队目前有成员{' '}
-                  <strong className="relative font-semibold text-gray-800">30 余人</strong>
-                  ，定期开展例会和学习交流，形成
-                  良好学风。涵盖全栈开发、人工智能、游戏开发、算法竞赛等多个领域。
-                </p>
-              </div>
-            </div>
+      <div className="relative z-10 flex w-full flex-col gap-10 lg:flex-row lg:items-start lg:justify-between">
+        <div className="flex-1 text-left md:ml-28">
+          <div className="mb-6 flex items-center gap-5 text-sm tracking-[0.3em] text-gray-400 before:block before:h-[1.5px] before:w-[30px] before:flex-shrink-0 before:bg-accent uppercase">
+            ONE · 团队概况
           </div>
 
-          <div
-            className="album-wrap hidden items-center -mr-40 md:flex"
-            style={{
-              opacity: 0,
-              transform: 'translateY(24px)',
-              transition:
-                'opacity .65s cubic-bezier(0.76,0,0.24,1) .7s, transform .65s cubic-bezier(0.76,0,0.24,1) .7s',
-            }}
-          >
-            <PhotoAlbum images={albumImages} labels={albumLabels} />
+          <h2 className="ch-title mb-20 cursor-default">
+            <div className="line-wrap overflow-hidden leading-[1.15]">
+              <span
+                className="line-inner block"
+                style={{
+                  transform: 'translateY(110%)',
+                  letterSpacing: '-0.03em',
+                  transition:
+                    'transform .7s cubic-bezier(0.76,0,0.24,1), letter-spacing .6s ease, filter .85s cubic-bezier(0.76,0,0.24,1)',
+                }}
+              >
+                <span className="text-3xl font-bold text-gray-800 sm:text-5xl md:text-7xl lg:text-8xl text-nowrap">
+                  乐程软件工作室
+                </span>
+              </span>
+            </div>
+            <div className="line-wrap overflow-hidden leading-[1.15]">
+              <span
+                className="line-inner block"
+                style={{
+                  transform: 'translateY(110%)',
+                  letterSpacing: '-0.03em',
+                  transition:
+                    'transform .7s cubic-bezier(0.76,0,0.24,1) .08s, letter-spacing .6s ease .08s, filter .85s cubic-bezier(0.76,0,0.24,1) .08s',
+                }}
+              >
+                <span className="text-3xl font-bold text-gray-800 sm:text-5xl md:text-7xl lg:text-8xl">
+                  不止于代码
+                </span>
+              </span>
+            </div>
+          </h2>
+
+          <div className="grid max-w-[1100px] gap-6 md:gap-12 md:grid-cols-2">
+            <div>
+              <div className="mb-5 border-b border-gray-300/40 pb-3 text-sm tracking-[0.15em] text-gray-400 uppercase">
+                团队概况
+              </div>
+              <p
+                className="body-p font-misans-light text-[1.05rem] leading-[1.75] text-gray-500"
+                style={{
+                  opacity: 0,
+                  transform: 'translateY(24px)',
+                  transition:
+                    'opacity .65s cubic-bezier(0.76,0,0.24,1) .4s, transform .65s cubic-bezier(0.76,0,0.24,1) .4s',
+                }}
+              >
+                乐程软件工作室（LEC SOFTWARE STUDIO）自{' '}
+                <strong className="relative font-semibold text-gray-800">2010 年 6 月</strong>{' '}
+                创立以来，已在软件开发和作品开发领域深耕
+                <strong className="relative font-semibold text-gray-800"> 十余年 </strong>
+                。我们是学生科研领域的佼佼者，致力于多方向的技术学习与人才培养。
+              </p>
+            </div>
+            <div>
+              <div className="mb-5 border-b border-gray-300/40 pb-3 text-sm tracking-[0.15em] text-gray-400 uppercase">
+                团队规模
+              </div>
+              <p
+                className="body-p font-misans-light text-[1.05rem] leading-[1.75] text-gray-500"
+                style={{
+                  opacity: 0,
+                  transform: 'translateY(24px)',
+                  transition:
+                    'opacity .65s cubic-bezier(0.76,0,0.24,1) .55s, transform .65s cubic-bezier(0.76,0,0.24,1) .55s',
+                }}
+              >
+                团队目前有成员{' '}
+                <strong className="relative font-semibold text-gray-800">30 余人</strong>
+                ，定期开展例会和学习交流，形成
+                良好学风。涵盖全栈开发、人工智能、游戏开发、算法竞赛等多个领域。
+              </p>
+            </div>
           </div>
+        </div>
+
+        <div className="hidden w-full lg:block lg:w-[700px] lg:flex-shrink-0 lg:mr-6 lg:ml-16">
+          <PhotoAlbum images={albumImages} labels={albumLabels} />
         </div>
       </div>
 
@@ -142,7 +132,6 @@ export default function Section2() {
         .visible .line-inner { transform: translateY(0) !important; }
         .visible .body-p { opacity: 1 !important; transform: none !important; }
         .visible .ch-bg-num { transform: translateY(-50%) translateX(0); opacity: 1; }
-        .visible .album-wrap { opacity: 1 !important; transform: translateY(0) !important; }
         .ch-bg-num {
           transform: translateY(-50%) translateX(30px);
           transition: transform 1.2s cubic-bezier(0.76,0,0.24,1), opacity 1.2s cubic-bezier(0.76,0,0.24,1);

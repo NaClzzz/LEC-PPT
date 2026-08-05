@@ -74,15 +74,16 @@ export default function Section4() {
           <div className="line-wrap overflow-hidden leading-[1.15]">
             <span
               className="line-inner block"
-              style={{
-                transform: 'translateY(110%)',
-                letterSpacing: '-0.03em',
-                transition:
-                  'transform .7s cubic-bezier(0.76,0,0.24,1), letter-spacing .6s ease, filter .85s cubic-bezier(0.76,0,0.24,1)',
-              }}
-            >
-              <span className="text-3xl font-bold text-gray-800 sm:text-5xl md:text-7xl lg:text-8xl">
-                硕果累累
+style={{
+                    transform: 'translateY(110%)',
+                    letterSpacing: '-0.03em',
+                    color: '#42A5F5',
+                    transition:
+                      'transform .7s cubic-bezier(0.76,0,0.24,1), letter-spacing .6s ease, filter .85s cubic-bezier(0.76,0,0.24,1), color .7s cubic-bezier(0.76,0,0.24,1)',
+                  }}
+                >
+                  <span className="text-3xl font-bold text-gray-800 sm:text-5xl md:text-7xl lg:text-8xl">
+                    硕果累累
               </span>
             </span>
           </div>

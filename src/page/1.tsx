@@ -90,11 +90,11 @@ SOF
               <div key={ri} className="flex gap-0">
                 {row.map((v, ci) => {
                   if (v === 0) return (
-                    <div key={ri + '-' + ci} className="h-24 w-24 sm:h-28 sm:w-28 md:h-36 md:w-36 lg:h-52 lg:w-52" />
+                    <div key={ri + '-' + ci} className="h-20 w-20 sm:h-24 sm:w-24 md:h-32 md:w-32 lg:h-48 lg:w-48" />
                   )
                   const isStart = ri === 1 && ci === 2
                   return (
-                    <div key={ri + '-' + ci} className="relative flex items-center justify-center h-24 w-24 sm:h-28 sm:w-28 md:h-36 md:w-36 lg:h-52 lg:w-52 rounded-full" style={{ backgroundColor: '#42A5F5' }}>
+                    <div key={ri + '-' + ci} className="relative flex items-center justify-center h-20 w-20 sm:h-24 sm:w-24 md:h-32 md:w-32 lg:h-48 lg:w-48 rounded-full" style={{ backgroundColor: '#42A5F5' }}>
                       {isStart && (
                         <div ref={startRef} className="flex flex-col items-center mt-0">
                           <span className="font-misans-light text-[clamp(1.5rem,3vw,2.5rem)] text-white leading-none">→</span>
@@ -119,9 +119,9 @@ SOF
               className="line-inner block"
               style={{ transform: 'translateY(110%)', letterSpacing: '-0.03em', transition: 'transform .7s cubic-bezier(0.76,0,0.24,1), letter-spacing .6s ease, filter .85s cubic-bezier(0.76,0,0.24,1)' }}
             >
-<span className="text-4xl font-bold text-gray-900 sm:text-5xl md:text-8xl lg:text-[7rem]">
-                 2026招新
-              </span>
+<span className="text-4xl font-bold text-gray-800 sm:text-5xl md:text-8xl lg:text-[7rem]">
+                  2026招新
+                </span>
             </span>
           </div>
           <div className="line-wrap overflow-hidden leading-[1.15]">
@@ -129,7 +129,7 @@ SOF
               className="line-inner block"
               style={{ transform: 'translateY(110%)', letterSpacing: '-0.03em', transition: 'transform .7s cubic-bezier(0.76,0,0.24,1) .08s, letter-spacing .6s ease .08s, filter .85s cubic-bezier(0.76,0,0.24,1) .08s' }}
             >
-              <span className="text-4xl font-bold text-gray-900 sm:text-5xl md:text-8xl lg:text-[7rem]">
+              <span className="text-4xl font-bold text-gray-800 sm:text-5xl md:text-8xl lg:text-[7rem]">
                 乐程软件工作室
               </span>
             </span>
@@ -139,8 +139,8 @@ SOF
 
       <style>{`
         .ch-title:hover .line-inner { letter-spacing: 0.15em !important; }
-        .visible .line-inner { transform: translateY(0) !important; }
-        .visible .body-p { opacity: 1 !important; transform: none !important; }
+        .visible .line-inner { transform: translateY(0) !important; color: #1f2937 !important; }
+        .visible .body-p { opacity: 1 !important; transform: none !important; color: #6b7280 !important; }
         .visible .ch-bg-num { opacity: 1 !important; }
         .ch-bg-num {
           transition: opacity 1.2s cubic-bezier(0.76,0,0.24,1);

@@ -30,9 +30,8 @@ export default function Section3() {
         TWO
       </div>
 
-      <div className="relative z-10 ml-0 w-full max-w-[1500px] text-left md:ml-28">
-        <div className="flex w-full flex-col gap-10 md:flex-row md:items-center md:gap-8">
-          <div className="flex-1">
+      <div className="relative z-10 flex w-full flex-col gap-10 lg:flex-row lg:items-start lg:justify-between">
+        <div className="w-full max-w-4xl text-left md:ml-28">
             <div className="mb-6 flex items-center gap-5 text-sm tracking-[0.3em] text-gray-400 before:block before:h-[1.5px] before:w-[30px] before:flex-shrink-0 before:bg-accent uppercase">
               TWO · 团队历史
             </div>
@@ -44,8 +43,9 @@ export default function Section3() {
                   style={{
                     transform: 'translateY(110%)',
                     letterSpacing: '-0.03em',
+                    color: '#42A5F5',
                     transition:
-                      'transform .7s cubic-bezier(0.76,0,0.24,1), letter-spacing .6s ease, filter .85s cubic-bezier(0.76,0,0.24,1)',
+                      'transform .7s cubic-bezier(0.76,0,0.24,1), letter-spacing .6s ease, filter .85s cubic-bezier(0.76,0,0.24,1), color .7s cubic-bezier(0.76,0,0.24,1)',
                   }}
                 >
                   <span className="text-3xl font-bold text-gray-800 sm:text-5xl md:text-7xl lg:text-8xl">
@@ -59,8 +59,9 @@ export default function Section3() {
                   style={{
                     transform: 'translateY(110%)',
                     letterSpacing: '-0.03em',
+                    color: '#42A5F5',
                     transition:
-                      'transform .7s cubic-bezier(0.76,0,0.24,1) .08s, letter-spacing .6s ease .08s, filter .85s cubic-bezier(0.76,0,0.24,1) .08s',
+                      'transform .7s cubic-bezier(0.76,0,0.24,1) .08s, letter-spacing .6s ease .08s, filter .85s cubic-bezier(0.76,0,0.24,1) .08s, color .7s cubic-bezier(0.76,0,0.24,1) .08s',
                   }}
                 >
                   <span className="text-3xl font-bold text-gray-800 sm:text-5xl md:text-7xl lg:text-8xl">
@@ -83,8 +84,9 @@ export default function Section3() {
                   style={{
                     opacity: 0,
                     transform: 'translateY(24px)',
+                    color: '#42A5F5',
                     transition:
-                      'opacity .65s cubic-bezier(0.76,0,0.24,1) .3s, transform .65s cubic-bezier(0.76,0,0.24,1) .3s',
+                      'opacity .65s cubic-bezier(0.76,0,0.24,1) .3s, transform .65s cubic-bezier(0.76,0,0.24,1) .3s, color .65s cubic-bezier(0.76,0,0.24,1) .3s',
                   }}
                 >
                   乐程软件工作室正式成立，怀着
@@ -107,8 +109,9 @@ export default function Section3() {
                   style={{
                     opacity: 0,
                     transform: 'translateY(24px)',
+                    color: '#42A5F5',
                     transition:
-                      'opacity .65s cubic-bezier(0.76,0,0.24,1) .4s, transform .65s cubic-bezier(0.76,0,0.24,1) .4s',
+                      'opacity .65s cubic-bezier(0.76,0,0.24,1) .4s, transform .65s cubic-bezier(0.76,0,0.24,1) .4s, color .65s cubic-bezier(0.76,0,0.24,1) .4s',
                   }}
                 >
                   团队创立初期，沉淀技术基础，积累项目经验。
@@ -127,7 +130,7 @@ export default function Section3() {
                     opacity: 0,
                     transform: 'translateY(24px)',
                     transition:
-                      'opacity .65s cubic-bezier(0.76,0,0.24,1) .5s, transform .65s cubic-bezier(0.76,0,0.24,1) .5s',
+                      'opacity .65s cubic-bezier(0.76,0,0.24,1) .5s, transform .65s cubic-bezier(0.76,0,0.24,1) .5s, color .65s cubic-bezier(0.76,0,0.24,1) .5s',
                   }}
                 >
                   保研、就业齐发展，在各项学科竞赛中崭露头角，获省、国赛奖项数十项。
@@ -146,7 +149,7 @@ export default function Section3() {
                     opacity: 0,
                     transform: 'translateY(24px)',
                     transition:
-                      'opacity .65s cubic-bezier(0.76,0,0.24,1) .6s, transform .65s cubic-bezier(0.76,0,0.24,1) .6s',
+                      'opacity .65s cubic-bezier(0.76,0,0.24,1) .6s, transform .65s cubic-bezier(0.76,0,0.24,1) .6s, color .65s cubic-bezier(0.76,0,0.24,1) .6s',
                   }}
                 >
                   团队规模扩大至 30 余人 ，技术方向拓展至 Agent 开发、图形学、机器学习等
@@ -158,7 +161,7 @@ export default function Section3() {
             </div>
           </div>
 
-          <div className="hidden w-full shrink-0 md:mr-16 md:mt-10 md:block md:w-[610px]">
+        <div className="hidden w-full lg:block lg:w-[700px] lg:flex-shrink-0 lg:mr-6">
             <div className="rounded-2xl border border-gray-200/60 bg-white/60 p-6">
               <div className="mb-4 font-bebas text-sm tracking-[0.3em] text-accent uppercase">
                 团队动态
@@ -189,12 +192,11 @@ export default function Section3() {
             </div>
           </div>
         </div>
-      </div>
 
       <style>{`
         .ch-title:hover .line-inner { letter-spacing: 0.15em !important; }
-        .visible .line-inner { transform: translateY(0) !important; }
-        .visible .body-p { opacity: 1 !important; transform: none !important; }
+        .visible .line-inner { transform: translateY(0) !important; color: #1f2937 !important; }
+        .visible .body-p { opacity: 1 !important; transform: none !important; color: #6b7280 !important; }
         .visible .ch-bg-num { transform: translateY(-50%) translateX(0); opacity: 1; }
         .ch-bg-num {
           transform: translateY(-50%) translateX(30px);
