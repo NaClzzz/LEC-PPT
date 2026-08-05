@@ -104,7 +104,6 @@ const GridMotion: FC<GridMotionProps> = ({ items = [], gradientColor = 'black' }
             >
               {Array.from({ length: colCount }, (_, itemIndex) => {
                 const content = combinedItems[rowIndex * colCount + itemIndex];
-                const num = rowIndex * colCount + itemIndex + 1;
                 return (
                   <div key={itemIndex} className="relative">
                     <div className="relative w-full h-full overflow-hidden rounded-[10px] bg-gray-100 flex items-center justify-center text-gray-900 text-[clamp(0.6rem,2vw,1.5rem)]">
@@ -116,9 +115,6 @@ const GridMotion: FC<GridMotionProps> = ({ items = [], gradientColor = 'black' }
                       ) : (
                         <div className="p-4 text-center z-[1] font-medium">{content}</div>
                       )}
-                      <span className="absolute top-1 left-1 z-[5] rounded bg-black/50 px-1.5 py-0.5 text-[0.55rem] font-semibold text-white">
-                        {num}
-                      </span>
                     </div>
                   </div>
                 );

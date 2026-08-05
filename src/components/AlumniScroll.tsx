@@ -65,7 +65,7 @@ const allMembers: { grade: string; name: string; dest: string; type: string; qq?
   { grade: '2020', name: '石一峰', dest: '华为', type: '就业', qq: '1602240546' },
   { grade: '2020', name: '李航舟', dest: '字节跳动', type: '就业', qq: '3393037864' },
   { grade: '2020', name: '袁云飞', dest: '中国铁路', type: '就业', qq: '' },
-  { grade: '2020', name: '张新云', dest: '小米', type: '就业', qq: '404837319' },
+  { grade: '2020', name: '张新云', dest: '事业单位', type: '就业', qq: '404837319' },
 
   { grade: '2019', name: '刘洪堃', dest: '电子科技大学', type: '深造', qq: '2510382609' },
   { grade: '2019', name: '岳筱涵', dest: '华东师范大学', type: '深造', qq: '2647790235' },
@@ -93,7 +93,7 @@ export default function AlumniScroll() {
   return (
     <div className="flex h-[680px] flex-col rounded-2xl border border-gray-200/60 bg-white/60 p-6 md:p-8">
       <h3 className="mb-4 text-xl font-bold tracking-[-0.02em] text-gray-900">
-        历届成员
+        往届成员
       </h3>
       <div className="mb-6 flex flex-wrap gap-4 border-b border-gray-200 pb-3">
         {gradeLabels.map((g) => (
