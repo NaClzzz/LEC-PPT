@@ -106,30 +106,15 @@ export default function LoadingScreen({ onFinish }: { onFinish: () => void }) {
 
       <div
         ref={introRef}
-        className="fixed inset-0 z-[8999] flex flex-col items-center justify-center bg-white -translate-y-10"
+        className="fixed inset-0 z-[8999] flex flex-col items-center justify-center bg-white translate-y-4"
         style={{
           pointerEvents: 'none',
           transition: 'opacity 1s cubic-bezier(0.76,0,0.24,1)',
         }}
       >
-        <div
-          ref={lineRef}
-          className="h-px bg-[#42A5F5]"
-          style={{
-            width: 0,
-            transition: 'width 1s cubic-bezier(0.77,0,0.175,1)',
-          }}
-        />
-        <p
-          ref={volRef}
-          className="mt-5 font-bebas text-[0.75rem] tracking-[0.45em] text-black/30"
-          style={{ opacity: 0, transform: 'translateY(6px)', transition: 'opacity .5s, transform .5s' }}
-        >
-          LEC · 乐程软件工作室 · 2026 
-        </p>
         <h2
           ref={phraseRef}
-          className="font-serif text-[clamp(2rem,7vw,7rem)] font-bold leading-none tracking-[-0.04em] text-black mt-12"
+          className="font-serif text-[clamp(2rem,7vw,7rem)] font-bold leading-none tracking-[-0.04em] text-black"
           style={{
             opacity: 0,
             transform: 'translateY(28px) scale(.96)',
@@ -138,6 +123,21 @@ export default function LoadingScreen({ onFinish }: { onFinish: () => void }) {
         >
           一起用代码创造世界
         </h2>
+        <div
+          ref={lineRef}
+          className="mt-8 mb-8 h-px bg-[#42A5F5]"
+          style={{
+            width: 0,
+            transition: 'width 1s cubic-bezier(0.77,0,0.175,1)',
+          }}
+        />
+        <p
+          ref={volRef}
+          className="font-bebas text-[0.75rem] tracking-[0.45em] text-black/30"
+          style={{ opacity: 0, transform: 'translateY(6px)', transition: 'opacity .5s, transform .5s' }}
+        >
+          LEC · 乐程软件工作室 · 2026 
+        </p>
       </div>
     </>
   )
