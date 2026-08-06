@@ -8,7 +8,7 @@ export default function Section1() {
   const titleRef = useRef<HTMLDivElement>(null)
   const smallLeftRef = useRef<HTMLSpanElement>(null)
   const smallRightRef = useRef<HTMLSpanElement>(null)
-  const startRef = useRef<HTMLDivElement>(null)
+  const startRef = useRef<HTMLAnchorElement>(null)
 
   useEffect(() => {
     const el = ref.current
@@ -96,10 +96,10 @@ SOF
                   return (
                     <div key={ri + '-' + ci} className="relative flex items-center justify-center h-20 w-20 sm:h-24 sm:w-24 md:h-32 md:w-32 lg:h-48 lg:w-48 rounded-full" style={{ backgroundColor: '#42A5F5' }}>
                       {isStart && (
-                        <div ref={startRef} className="flex flex-col items-center mt-0">
+                        <a ref={startRef} href="#section-2" className="flex flex-col items-center no-underline">
                           <span className="font-misans-light text-[clamp(1.5rem,3vw,2.5rem)] text-white leading-none">→</span>
                           <span className="font-misans-light text-[clamp(0.5rem,0.8vw,0.7rem)] tracking-[0.2em] text-white/80">START</span>
-                        </div>
+                        </a>
                       )}
                     </div>
                   )
