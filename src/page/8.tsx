@@ -44,7 +44,7 @@ export default function Section8() {
           如果你渴望在大学期间提升编程技能，参与实际项目开发，结交志同道合的朋友，为未来的职业发展<br/>或学术深造打下坚实基础，那么，不要犹豫，加入乐程软件工作室吧！
         </p>
         <p className="body-p mb-10 max-w-[1000px] font-misans-light text-sm md:text-[1.05rem] leading-[1.75] text-gray-500" style={{ opacity: 0, transform: 'translateY(24px)', transition: 'opacity .65s cubic-bezier(0.76,0,0.24,1) .45s, transform .65s cubic-bezier(0.76,0,0.24,1) .45s' }}>
-          我们期待与你一起，在代码的海洋中遨游，用技术创造无限可能。
+          我们期待与你一起，在代码的海洋中遨游，用技术创造无限可能！
         </p>
 
         <div className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-end">
