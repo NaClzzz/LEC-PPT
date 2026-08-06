@@ -65,6 +65,13 @@ export default function Section4() {
         THREE
       </div>
 
+      <div className="pointer-events-none absolute left-6 top-1/2 z-10 hidden -translate-y-1/2 flex-col items-center md:flex">
+        <div className="h-16 w-1.5 bg-accent" />
+        <span className="mt-5 font-bebas text-[clamp(0.7rem,1vw,1rem)] tracking-[0.3em] text-gray-300/70" style={{ writingMode: 'vertical-rl' }}>
+          LEC SOFTWARE STUDIO
+        </span>
+      </div>
+
       <div className="relative z-10 ml-0 w-full max-w-4xl text-left md:ml-28">
         <div className="mb-6 flex items-center gap-5 text-sm tracking-[0.3em] text-gray-400 before:block before:h-[1.5px] before:w-[30px] before:flex-shrink-0 before:bg-accent uppercase">
           THREE · 团队成就
@@ -125,26 +132,7 @@ style={{
             </p>
           </div>
           <div>
-            <div className="mb-3 font-bebas text-5xl leading-none text-accent">5+</div>
-            <div className="mb-3 border-b border-gray-300/40 pb-2 text-sm tracking-[0.15em] text-gray-400 uppercase">
-              科研立项
-            </div>
-            <p
-              className="body-p font-misans-light text-sm md:text-[1.05rem] leading-[1.75] text-gray-500"
-              style={{
-                opacity: 0,
-                transform: 'translateY(24px)',
-                transition:
-                  'opacity .65s cubic-bezier(0.76,0,0.24,1) .45s, transform .65s cubic-bezier(0.76,0,0.24,1) .45s',
-              }}
-            >
-              团队项目多次获
-              <strong className="relative font-semibold text-gray-800"> 国家级大创 </strong>
-              立项，多个课题进入校级、省级培育计划，持续产出科研成果。
-            </p>
-          </div>
-          <div>
-            <div className="mb-3 font-bebas text-5xl leading-none text-accent">50+</div>
+            <div className="mb-3 font-bebas text-5xl leading-none text-accent">100+</div>
             <div className="mb-3 border-b border-gray-300/40 pb-2 text-sm tracking-[0.15em] text-gray-400 uppercase">
               奖学金
             </div>
@@ -158,8 +146,27 @@ style={{
               }}
             >
               历届成员累计获得
-              <strong className="relative font-semibold text-gray-800"> 50余人次 </strong>
+              <strong className="relative font-semibold text-gray-800"> 百余人次 </strong>
               校级及以上奖学金，含国家奖学金、校长奖学金、特等奖学金等。
+            </p>
+          </div>
+          <div>
+            <div className="mb-3 font-bebas text-5xl leading-none text-accent">10+</div>
+            <div className="mb-3 border-b border-gray-300/40 pb-2 text-sm tracking-[0.15em] text-gray-400 uppercase">
+              科研立项
+            </div>
+            <p
+              className="body-p font-misans-light text-sm md:text-[1.05rem] leading-[1.75] text-gray-500"
+              style={{
+                opacity: 0,
+                transform: 'translateY(24px)',
+                transition:
+                  'opacity .65s cubic-bezier(0.76,0,0.24,1) .45s, transform .65s cubic-bezier(0.76,0,0.24,1) .45s',
+              }}
+            >
+              团队项目多次获校级开放实验以及省级、国家级大创立项，多个课题进入培育计划，
+              <strong className="relative font-semibold text-gray-800">持续产出 </strong>
+              科研成果。
             </p>
           </div>
         </div>

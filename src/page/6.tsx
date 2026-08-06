@@ -84,6 +84,13 @@ export default function Section6() {
         FIVE
       </div>
 
+      <div className="pointer-events-none absolute left-6 top-1/2 z-10 hidden -translate-y-1/2 flex-col items-center md:flex">
+        <div className="h-16 w-1.5 bg-accent" />
+        <span className="mt-5 font-bebas text-[clamp(0.7rem,1vw,1rem)] tracking-[0.3em] text-gray-300/70" style={{ writingMode: 'vertical-rl' }}>
+          LEC SOFTWARE STUDIO
+        </span>
+      </div>
+
       <div className="relative z-10 ml-0 md:ml-28 w-full max-w-4xl text-left">
         <div className="mb-6 flex items-center gap-5 text-sm tracking-[0.3em] text-gray-400 before:block before:h-[1.5px] before:w-[30px] before:flex-shrink-0 before:bg-accent uppercase">
           FIVE · 技术方向
